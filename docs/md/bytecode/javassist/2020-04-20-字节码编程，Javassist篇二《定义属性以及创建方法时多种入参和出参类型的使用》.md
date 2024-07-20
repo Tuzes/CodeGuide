@@ -117,7 +117,7 @@ public class GenerateClazzMethod {
 
 下面这张基本描述了一个类方法在创建时候不同参数的含义，可以参考。
 
-![Javassist 创建类方法入参描述](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-02-1.png)
+![Javassist 创建类方法入参描述](res\2020-04-20-字节码编程，Javassist篇二《定义属性以及创建方法时多种入参和出参类型的使用》.md\1a83143f-167a-440e-9e27-28bd2b76205e.jpg)
 
 ## 五、测试结果
 
@@ -150,7 +150,7 @@ Process finished with exit code 0
 
 ### 2. 查看使用Javassist生成的类
 
-![Javassist 生成的类内容](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-02-2.png)
+![Javassist 生成的类内容](res\2020-04-20-字节码编程，Javassist篇二《定义属性以及创建方法时多种入参和出参类型的使用》.md\ba1f009b-5401-431f-853d-fab23b626a1e.jpg)
 
 ## 六、总结
 

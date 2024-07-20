@@ -86,7 +86,7 @@ public interface IGenerateVo2Dto {
 
 因为生成代码并织入锚点位置的操作，整个来看其实也是一套流程操作，因为在这个过程需要；获取上下文信息(也就是工程对象)、给当前锚点位置的类提取 set 方法集合、之后在给`Ctrl+C`剪切板上的信息读取出来提取 get 方法集合，第四步把set、get进行组合并织入代码到锚点位置。整体过程如下：
 
-![](https://bugstack.cn/images/article/assembly/assembly-211214-6-01.png)
+![](res\2021-12-14-《IntelliJ IDEA 插件开发》第六节：以织入代码的方式，自动处理vo2dto.md\198db33d-2a3a-4962-a419-596902d1936f.jpg)
 
 - 那么在使用模板方法后，就可以非常容易的把写在一个类里的成片的代码按照职责进行拆分。
 - 同时因为有了模板的定义，也就定义出了整个一套标准流程，在流程规范下执行代码，后续再补充逻辑迭代功能也会更加容易。
@@ -155,15 +155,15 @@ protected void weavingSetGetCode(GenerateContext generateContext, SetObjConfigDO
 
 ### 1. 复制对象
 
-![](https://bugstack.cn/images/article/assembly/assembly-211214-6-02.png)
+![](res\2021-12-14-《IntelliJ IDEA 插件开发》第六节：以织入代码的方式，自动处理vo2dto.md\86e08f4f-f6eb-4356-92ff-78735d95100a.jpg)
 
 ### 2. 生成对象
 
-![](https://bugstack.cn/images/article/assembly/assembly-211214-6-03.png)
+![](res\2021-12-14-《IntelliJ IDEA 插件开发》第六节：以织入代码的方式，自动处理vo2dto.md\44daae18-fef6-4582-b5c1-463fa9932374.jpg)
 
 ### 3. 最终效果
 
-![](https://bugstack.cn/images/article/assembly/assembly-211214-6-04.png)
+![](res\2021-12-14-《IntelliJ IDEA 插件开发》第六节：以织入代码的方式，自动处理vo2dto.md\f3fe9758-fa70-4c52-ba68-1322ab2416f0.jpg)
 
 - 最终你就可以看到已经把你全部的对象转换，自动生成出来代码了，是不是很香。
 - 如果你直接使用快捷键 `Ctrl + Shift + K` 也是可以自动生成的。

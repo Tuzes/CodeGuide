@@ -18,7 +18,7 @@ lock: need
 
 万万没想到！`Github` 竟然受到攻击了！还能让我使用了 `GitPage` 的博客瘫痪了！
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.0.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\3a0c7bf2-127c-4af0-bd00-e30d4c3901f9.jpg)
 
 整个网站一下不能访问了，还是有点慌的，毕竟在这之前没有考虑到还能有这事。但虽然没有一个准备好了的预案，但也还是可以使用自己技术把这事搞定，尽快恢复。为了可以尽快恢复博客的访问，我把网站迁移到了 `码云` 的Gitpage服务，并开启免费一个月使用（挺香）,并迅速搞定配置以及 ```HTTPS```。嗯！迁移过来速度还比之前快了。但是后来发现有些网络环境下竟然不能访问，这又让我感觉不爽了，否则我都快要交钱给 `码云` (一年90元)。到 `码云` 官网群问使用这个搭建博客，百度收录吗？也没有人回应。**如果不收录我没必要用了就，是吧。钱花了，事没办！** 不过也还好有 Gitee，否则网站不能那么快恢复，如果按照下面的方式搞，至少 `24` 小时才能完事。
 
@@ -122,19 +122,19 @@ https://gems.ruby-china.com
 接下来的步骤就比较简单了，但整体的过程比较耗时，黑窗口会在我们执行命令后下载大约 `600M` 的软件。 
 
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.5.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\24b344c9-e239-4b89-824a-62812004ceef.jpg)
 
 >命令 1
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.6.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\a00d06ee-3577-425a-95d7-b038fe56a020.jpg)
 
 >命令 2
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.7.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\3dbb186b-e39f-44ab-9437-666b0ccabdc7.jpg)
 
 >命令 3
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.8.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\cb7f5af4-23c6-4f8f-bb9c-f0776ec89f2a.jpg)
 
 好！当你顺利安装到此后，你的软件就已经安装完成，可以使用了！
 
@@ -235,7 +235,7 @@ Configuration file: E:/myblog/_config.yml
 
 ### 5. 运行效果
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.9.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\33e758f6-ca37-4cf5-a17f-4145ca5c2eeb.jpg)
 
 - 具体如何使用Jekyll编写博客，可以参考官网文档
 
@@ -314,7 +314,7 @@ Fetching rake 13.0.1 (was 12.3.0)
 bundle exec jekyll build 
 ```
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.10.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\57a0a60f-112f-4710-83fb-d1b095e6b8f9.jpg)
 
 ### 5. 运行
 
@@ -324,7 +324,7 @@ bundle exec jekyll s
 
 >http://localhost:4000/
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.11.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\d2f44305-435f-41fe-8531-a9c182079547.jpg)
 
 - 可以看到我们已经很顺利的运行并访问了博客，效果还不错。
 - 这会虽然是本地运行，所以里面的链接都是 ```http://localhost:4000/``` ，不能用于服务端部署。
@@ -370,7 +370,7 @@ E:\itstack\gitee.com\fuzhengwei.github.io>
 
 远程服务器的部署主要依赖于大家个子使用的服务器类型，我的手里有一台云虚拟机，通过FTP的方式进行部署即可。如下；
 
-![](https://bugstack.cn/assets/images/2020/itstack-code-life-1.12.png)
+![](res\2020-03-28-GithubAndMyBlogAttacked.md\2f23b4aa-7b3e-48eb-ac39-aaa69d29539b.jpg)
 
 - 部署以后我们在线网站就可以访问了；[https://bugstack.cn/](https://bugstack.cn/)
 

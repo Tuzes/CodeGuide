@@ -150,11 +150,11 @@ public class NettyClient {
 ## 测试结果
 >启动模拟器NetAssist 设置TCP Server
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-1-08-1.png)
+![](res\2019-08-11-netty案例，netty4.1基础入门篇八《NettyClient半包粘包处理、编码解码处理、收发数据方式》.md\00556d62-01fd-469c-9819-c727872e28db.jpg)
 
 >启动客户端NettyClient
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-1-08-2.png)
+![](res\2019-08-11-netty案例，netty4.1基础入门篇八《NettyClient半包粘包处理、编码解码处理、收发数据方式》.md\ed29cc7c-4eea-4562-b5fd-b70edf9601d5.jpg)
 
 >执行结果
 

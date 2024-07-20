@@ -30,7 +30,7 @@ lock: need
 
 而本章节我们要实现的也是水平拆分的路由设计，如图 1-1
 
-![图 1-1](https://bugstack.cn/assets/images/middleware/blog-4-1.png)
+![图 1-1](res\db-router.md\22d21d49-a92a-4c85-9b0f-bb8a3a6dbe60.jpg)
 
 那么，这样的一个数据库路由设计要包括哪些技术知识点呢？
 
@@ -47,7 +47,7 @@ lock: need
 
 ### 1. ThreadLocal
 
-![](https://bugstack.cn/assets/images/middleware/blog-4-2.png)
+![](res\db-router.md\aacc409e-3137-4317-9cc0-e7d71db7dbd1.jpg)
 
 ```java
 @Test
@@ -85,7 +85,7 @@ public void test_idx() {
 
 ### 2. HashMap
 
-![](https://bugstack.cn/assets/images/middleware/blog-4-3.png)
+![](res\db-router.md\b2c2f562-b493-4d4a-b9bc-db23dc10788c.jpg)
 
 ```java
 public static int disturbHashIdx(String key, int size) {
@@ -135,7 +135,7 @@ public interface IUserDao {
 
 ### 2. 解析路由配置
 
-![](https://bugstack.cn/assets/images/middleware/blog-4-4.png)
+![](res\db-router.md\0d7ed2b4-a8ee-4dd5-9ffc-f65384f4324e.jpg)
 
 - 以上就是我们实现完数据库路由组件后的一个数据源配置，在分库分表下的数据源使用中，都需要支持多数据源的信息配置，这样才能满足不同需求的扩展。
 - 对于这种自定义较大的信息配置，就需要使用到 `org.springframework.context.EnvironmentAware` 接口，来获取配置文件并提取需要的配置信息。

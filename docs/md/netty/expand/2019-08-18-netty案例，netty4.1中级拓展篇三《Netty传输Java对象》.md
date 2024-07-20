@@ -475,11 +475,11 @@ public class SerializationUtil {
 ## 测试结果
 >启动NettyServer
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-03-1.png)
+![](res\2019-08-18-netty案例，netty4.1中级拓展篇三《Netty传输Java对象》.md\38689a7d-bd42-482e-9d7c-0fd6c6d039b6.jpg)
 
 >启动NettyClient
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-03-2.png)
+![](res\2019-08-18-netty案例，netty4.1中级拓展篇三《Netty传输Java对象》.md\db30717f-c219-4cc9-bd40-4a5a3864bcec.jpg)
 
 >服务端执行结果
 

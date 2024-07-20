@@ -90,7 +90,7 @@ System.out.println("StringBuffer 耗时" + (System.currentTimeMillis() - startTi
 
 **综上**，分别使用了 `String`、`StringBuilder`、`StringBuffer`，做字符串链接操作(*100个、1000个、1万个、10万个、100万个*)，记录每种方式的耗时。最终汇总图表如下；
 
-![小傅哥 & 耗时对比](https://bugstack.cn/assets/images/2020/interview/interview-12-01.png)
+![小傅哥 & 耗时对比](res\2020-09-17-面经手册 · 第11篇《StringBuilder 比 String 快？空嘴白牙的，证据呢！》.md\5d77dfb4-2cd5-4b4b-b822-82e8246b8833.jpg)
 
 从上图可以得出以下结论；
 1. `String` 字符串链接是耗时的，尤其数据量大的时候，简直没法使用了。*这是做实验，基本也不会有人这么干！*
@@ -109,7 +109,7 @@ for (int i = 0; i < 10000; i++) {
 
 确实会被JVM编译期优化，但优化成什么样子了呢，先看下字节码指令；`javap -c ApiTest.class`
 
-![小傅哥 & 反编译](https://bugstack.cn/assets/images/2020/interview/interview-12-02.png)
+![小傅哥 & 反编译](res\2020-09-17-面经手册 · 第11篇《StringBuilder 比 String 快？空嘴白牙的，证据呢！》.md\c650e215-bf9e-4956-b93a-11ffdec282b9.jpg)
 
 一看指令码，这不是在循环里(*if_icmpgt*)给我 `new` 了 `StringBuilder` 了吗，怎么还这么慢呢？再仔细看，其实你会发现，这new是在循环里吗呀，我们把这段代码写出来再看看；
 
@@ -173,7 +173,7 @@ public char charAt(int index) {
 
 字符串创建后是不可变的，你看到的`+加号`连接操作，都是创建了新的对象把数据存放过去，通过源码就可以看到；
 
-![小傅哥 & String 不可变](https://bugstack.cn/assets/images/2020/interview/interview-12-03.png)
+![小傅哥 & String 不可变](res\2020-09-17-面经手册 · 第11篇《StringBuilder 比 String 快？空嘴白牙的，证据呢！》.md\0eff126e-c48e-49a1-8125-50517bc68dd4.jpg)
 
 从源码中可以看到，`String` 的类和用于存放字符串的方法都用了 `final` 修饰，也就是创建了以后，这些都是不可变的。
 
@@ -304,7 +304,7 @@ oop StringTable::intern(Handle string_or_null, jchar* name,
 
 #### 3.3 问题图解
 
-![小傅哥 & 图解true/false](https://bugstack.cn/assets/images/2020/interview/interview-12-04.png)
+![小傅哥 & 图解true/false](res\2020-09-17-面经手册 · 第11篇《StringBuilder 比 String 快？空嘴白牙的，证据呢！》.md\806e6f26-3fbe-4ba3-9e63-33094d8899a6.jpg)
 
 看图说话，如下；
 
@@ -446,7 +446,7 @@ public synchronized StringBuffer append(String str) {
 
 其实为了减少获得锁与释放锁带来的性能损耗，从而引入了偏向锁、轻量级锁、重量级锁来进行优化，它的进行一个锁升级，如下图(此图引自互联网用户：**韭韭韭韭菜**，画的非常优秀)；
 
-![小傅哥 & 此图引自互联网，画的非常漂亮](https://bugstack.cn/assets/images/2020/interview/interview-12-05.png)
+![小傅哥 & 此图引自互联网，画的非常漂亮](res\2020-09-17-面经手册 · 第11篇《StringBuilder 比 String 快？空嘴白牙的，证据呢！》.md\f65b9b2f-0be9-4c42-810a-e9eb3a2065a0.jpg)
 
 1. 从无锁状态开始，当线程进入 `synchronized` 同步代码块，会检查对象头和栈帧内是否有当前线下ID编号，无则使用 `CAS` 替换。
 2. 解锁时，会使用 `CAS` 将 `Displaced Mark Word` 替换回到对象头，如果成功，则表示竞争没有发生，反之则表示当前锁存在竞争锁就会升级成重量级锁。

@@ -34,7 +34,7 @@ lock: need
 
 `谢飞机，小记` 还没有拿到 offer 的飞机，早早起了床，吃完两根油条，又跑到公司找面试官取经！
 
-![灵魂画手 & 老纪](https://bugstack.cn/assets/images/2020/interview/interview-13-01.png)
+![灵魂画手 & 老纪](res\2020-09-23-面经手册 · 第12篇《面试官，ThreadLocal 你要这么问，我就挂了！》.md\a2a77076-4f92-4d06-8dd6-4b1e594056fd.jpg)
 
 **面试官**：飞机，听坦克说，你最近贪黑起早的学习呀。
 
@@ -286,7 +286,7 @@ private void set(ThreadLocal<?> key, Object value) {
 
 从这部分源码中可以看到，`ThreadLocal` 底层采用的是数组结构存储数据，同时还有哈希值计算下标，这说明它是一个散列表的数组结构，演示如下图；
 
-![小傅哥 & threadLocal 数据结构](https://bugstack.cn/assets/images/2020/interview/interview-13-02.png)
+![小傅哥 & threadLocal 数据结构](res\2020-09-23-面经手册 · 第12篇《面试官，ThreadLocal 你要这么问，我就挂了！》.md\0f9f496f-aa90-4ec8-b2ae-f2e42fc4a62d.jpg)
 
 如上图是 `ThreadLocal` 存放数据的底层数据结构，包括知识点如下；
 1. 它是一个数组结构。
@@ -448,7 +448,7 @@ Process finished with exit code 0
 
 设置元素的方法，也就这么一句代码。但设置元素的流程却涉及的比较多，在详细分析代码前，我们先来看一张设置元素的流程图，从图中先了解不同情况的流程之后再对比着学习源码。流程图如下；
 
-![小傅哥 & 设置元素流程图](https://bugstack.cn/assets/images/2020/interview/interview-13-03.png)
+![小傅哥 & 设置元素流程图](res\2020-09-23-面经手册 · 第12篇《面试官，ThreadLocal 你要这么问，我就挂了！》.md\8daf8586-973c-4c4b-8d0c-3cc29a61e7cb.jpg)
 
 乍一看可能感觉有点晕，我们从左往右看，分别有如下知识点；
 0. 中间是 `ThreadLocal` 的数组结构，之后在设置元素时分为四种不同的情况，另外元素的插入是通过斐波那契散列计算下标值，进行存放的。
@@ -580,7 +580,7 @@ private void resize() {
 
 同样获取元素也就这么一句代码，如果没有分析源码之前，你能考虑到它在不同的数据结构下，获取元素时候都做了什么操作吗。我们先来看下图，分为如下种情况；
 
-![小傅哥 & 获取元素图解](https://bugstack.cn/assets/images/2020/interview/interview-13-05.png)
+![小傅哥 & 获取元素图解](res\2020-09-23-面经手册 · 第12篇《面试官，ThreadLocal 你要这么问，我就挂了！》.md\6a285f32-6132-4f68-83ff-ad1e8857515a.jpg)
 
 按照不同的数据元素存储情况，基本包括如下情况；
 1. 直接定位到，没有哈希冲突，直接返回元素即可。

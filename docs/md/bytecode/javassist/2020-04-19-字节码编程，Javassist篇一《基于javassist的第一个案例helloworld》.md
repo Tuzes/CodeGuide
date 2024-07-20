@@ -122,7 +122,7 @@ public class GenerateClazzMethod {
 
 ### 1. 使用Javassist生成的类
 
-![使用Javassist生成的类，在工程文件夹下](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-01-1.png)
+![使用Javassist生成的类，在工程文件夹下](res\2020-04-19-字节码编程，Javassist篇一《基于javassist的第一个案例helloworld》.md\aad16fbd-aad1-4adc-a9a1-48e264e46d34.jpg)
 
 ### 2. 输出的测试结果
 

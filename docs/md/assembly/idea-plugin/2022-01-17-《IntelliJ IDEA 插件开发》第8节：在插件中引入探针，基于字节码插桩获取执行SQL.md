@@ -123,7 +123,7 @@ public static Object intercept(@This Object obj, @Origin Method method, @SuperCa
 
 在测试和开发 IDEA Plugin 插件之前，我们需要先进行一个打包操作，这个打包就是把字节码增强的代码打包整一个 Jar 包。在 build.gradle -> shadowJar
 
-![](https://bugstack.cn/images/article/assembly/assembly-220117-8-01.png)
+![](res\2022-01-17-《IntelliJ IDEA 插件开发》第8节：在插件中引入探针，基于字节码插桩获取执行SQL.md\0a92028e-408b-4cfa-b31d-54374a7026dc.jpg)
 
 - 打包编译后，就可以在 build -> libs 下看到 Jar：`probe-agent-1.0-SNAPSHOT-all.jar` 这个 Jar 就是用来做字节码增强处理的。
 
@@ -180,7 +180,7 @@ SELECT * FROM USER WHERE id = 1 AND name = '谢飞机'
 
 #### 3.1 复制 jar 到 libs 下
 
-![](https://bugstack.cn/images/article/assembly/assembly-220117-8-02.png)
+![](res\2022-01-17-《IntelliJ IDEA 插件开发》第8节：在插件中引入探针，基于字节码插桩获取执行SQL.md\4d8bf64f-cde6-41c3-81b5-32b27813c668.jpg)
 
 #### 3.2 build.gradle 配置加载
 
@@ -233,7 +233,7 @@ public class PerRun extends JavaProgramPatcher {
 
 **启动插件**
 
-![](https://bugstack.cn/images/article/assembly/assembly-220117-8-03.png)
+![](res\2022-01-17-《IntelliJ IDEA 插件开发》第8节：在插件中引入探针，基于字节码插桩获取执行SQL.md\f86aeea3-a0d6-4d03-a00f-856ef39d3875.jpg)
 
 - 如果你是新下载代码，那么可以在 probe-plugin -> Tasks -> intellij -> runIde 中进行运行启动。
 

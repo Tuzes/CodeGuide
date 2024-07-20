@@ -20,7 +20,7 @@ lock: need
 
 那么，本章节我们去简单实现一个基于jdbc的demo版本Mybatis，从而更加清楚这样框架的设计。与此同时这份思想会让你可以在其他场景使用，比如给ES查询写一个EsBatis。实现了心情也好了；
 
-![微信公众号：bugstack虫洞栈 & DemoMybatis](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-mybatis-07.png)
+![微信公众号：bugstack虫洞栈 & DemoMybatis](res\2020-01-13-[源码分析]基于jdbc实现一个Demo版的Mybatis.md\f74cb38d-151d-4e4c-8f5b-13635e5ada7c.jpg)
 
 ## 二、案例工程
 

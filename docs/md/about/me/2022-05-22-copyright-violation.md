@@ -24,7 +24,7 @@ lock: need
 
 关于《重学Java设计模式》电子版，直接在我的博客阅读即可，**此外出版书籍《重学Java设计模式》皆是原创图片无任何图片引用，参考下图**；
 
-![《重学Java设计模式》出版图书](https://bugstack.cn/images/article/about/about-220522-00.png)
+![《重学Java设计模式》出版图书](res\2022-05-22-copyright-violation.md\d58c121c-eefc-418b-acfd-702689760f93.jpg)
 
 - 图书链接：[https://item.jd.com/13218336.html](https://item.jd.com/13218336.html)
 - 在线阅读：[https://bugstack.cn](https://bugstack.cn/md/develop/design-pattern/2020-05-20-%E9%87%8D%E5%AD%A6Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%8A%E5%AE%9E%E6%88%98%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F%E3%80%8B.html)
@@ -35,7 +35,7 @@ lock: need
 
 我在掘金分享了一篇名为[《【躲过裁员，成功上岸】发现小公司有不好的苗头，赶紧学习！》](https://juejin.cn/post/7080293998383857695)的资料分享文章，其中宣传了我的《重学Java设计模式》PDF资料，被举报的就是这个内容中的图片引用问题。
 
-![侵权举报，过程截图](https://bugstack.cn/images/article/about/about-220522-01.png)
+![侵权举报，过程截图](res\2022-05-22-copyright-violation.md\fde3b4ed-35ec-439c-8549-f2b981d08afe.jpg)
 
 - **文章地址**：[https://juejin.cn/post/7080293998383857695](https://juejin.cn/post/7080293998383857695)
 - **截图说明**：这里他做的也没有错，人人都有监督的权利。*整个内容在掘金的文章下都是可见的，也就不用打码了，这样看的更真实。*
@@ -55,7 +55,7 @@ Copyright violation：[https://github.com/fuzhengwei/CodeGuide/issues/310](https
 
 ### 3.1 侵权通知
 
-![侵权通知](https://bugstack.cn/images/article/about/about-220522-02.png)
+![侵权通知](res\2022-05-22-copyright-violation.md\f6f3e379-1b4c-4d35-9305-b75046ee2e01.jpg)
 
 我叫 Alexander Shvets，我是这两个博客的作者。
 
@@ -65,13 +65,13 @@ Copyright violation：[https://github.com/fuzhengwei/CodeGuide/issues/310](https
 
 ### 3.2 积极反馈
 
-![积极反馈](https://bugstack.cn/images/article/about/about-220522-03.png)
+![积极反馈](res\2022-05-22-copyright-violation.md\6a202c03-c50e-48b7-b828-3e9ce22a3953.jpg)
 
 接到侵权通知后，立马做出了反馈；告诉他，我非常喜欢他们的这个优秀的网站，在我学习的过程中引用了网站的图片资源，这些内容非营利性的。引用方式如图所示，看看对方认为这样是否可以。
 
 ### 3.3 得到回应
 
-![得到回应](https://bugstack.cn/images/article/about/about-220522-04.png)
+![得到回应](res\2022-05-22-copyright-violation.md\12fad2fd-b009-4762-9c5d-26f89cd40916.jpg)
 
 neochief 打字的速度非常快，回复的很及时。告诉我现在你的引用有些缺失，也不标准，需要按照下面的方式进行引用。*我一听到这有戏！*
 
@@ -79,13 +79,13 @@ neochief 打字的速度非常快，回复的很及时。告诉我现在你的�
 
 ### 3.4 立马改正
 
-![立马改正](https://bugstack.cn/images/article/about/about-220522-05.png)
+![立马改正](res\2022-05-22-copyright-violation.md\765f0ee4-2d1f-41ca-8b36-94a31a74659d.jpg)
 
 见到可以修改后，继续引用。赶紧搞吧，把所有仓库中的文章修改完成，并编译文件进行提交，刷新下没问题，立刻给了 neochief 发了回复，告诉他可以刷新博客了，刷新后检查下链接。
 
 ### 3.5 达成和解
 
-![达成和解](https://bugstack.cn/images/article/about/about-220522-06.png)
+![达成和解](res\2022-05-22-copyright-violation.md\5edf58e8-40ef-4325-bfe6-9e279906d943.jpg)
 
 很高兴能看到 neochief 的回复：`谢谢，我很高兴我们达成了谅解！让我们保持联系！` 
 
@@ -97,6 +97,6 @@ neochief 打字的速度非常快，回复的很及时。告诉我现在你的�
 
 关于《中华人民共和国著作权法》文件已经上传到小傅哥的仓库，后续我的技术仓库会遵照著作法进行编写原创技术内容，同时也会依照著作法保护我的原创输出。
 
-![《中华人民共和国著作权法》](https://bugstack.cn/images/article/about/about-220522-07.png)
+![《中华人民共和国著作权法》](res\2022-05-22-copyright-violation.md\b55b50d0-cb91-420a-b2ac-993f9f1a5701.jpg)
 
 - 仓库地址：[https://github.com/fuzhengwei/CodeGuide](https://github.com/fuzhengwei/CodeGuide)

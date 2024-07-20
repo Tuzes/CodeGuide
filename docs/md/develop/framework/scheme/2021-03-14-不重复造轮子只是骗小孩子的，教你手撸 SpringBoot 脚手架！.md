@@ -32,7 +32,7 @@ lock: need
 
 `有什么场景还能造轮子？`
 
-![](https://bugstack.cn/assets/images/2020/all-28-1.png)
+![](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\2f1e26c9-74f4-4d7e-b9bf-dbc07a457587.jpg)
 
 用于架构基建下的所有模块都可以成为轮子，通常我们都是在这些场景下：`负载均衡`、`服务网关`、`服务治理`、`框架语言`、`服务组件`、`数据承载`、`框架结构`、`部署方式`、`工具插件`，建设需要的轮子。
 
@@ -46,7 +46,7 @@ lock: need
 
 - [https://stackoverflow.com/questions/235018/what-is-scaffolding-is-it-a-term-for-a-particular-platform](https://stackoverflow.com/questions/235018/what-is-scaffolding-is-it-a-term-for-a-particular-platform)
 
-![脚手架](https://bugstack.cn/assets/images/2020/all-28-2.png)
+![脚手架](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\514235fe-773f-4542-94ae-d9b1962738e1.jpg)
 
 结合 stackoverflow 上的回答，脚手架是一种元编程方法，用于构建基于数据的应用。创建系统架构的程序员编写一份规格说明书，用于描述怎么去使用数据库。而脚手架可以根据这份规则说明书生成相应的框架代码。我们把这种模式成为脚手架，在脚手架上更高效的构建出 `powerful` 的应用！
 
@@ -56,7 +56,7 @@ lock: need
 
 ### 1、Spring 官网脚手架
 
-![spring initializr](https://bugstack.cn/assets/images/2020/all-28-3.png)
+![spring initializr](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\685f6c38-b13a-478a-899c-d11511bfba84.jpg)
 
 - 推荐：⭐⭐⭐⭐
 - 链接：[https://start.spring.io](https://start.spring.io/)
@@ -65,7 +65,7 @@ lock: need
 
 ### 2、阿里云脚手架
 
-![Aliyun Java Initializr](https://bugstack.cn/assets/images/2020/all-28-4.png)
+![Aliyun Java Initializr](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\8f579ffa-eda0-4ab7-9e13-37f0e218af57.jpg)
 
 - 推荐：⭐⭐⭐⭐
 - 链接：[https://start.aliyun.com](https://start.aliyun.com/)
@@ -128,7 +128,7 @@ EasyRiggerInitializr
                  └── ApiTest.java
 ```
 
-![脚手架生成工程](https://bugstack.cn/assets/images/2020/all-28-5.png)
+![脚手架生成工程](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\7b144bfe-b73e-4207-8b46-6a3458d8ae22.jpg)
 
 整个用于创建脚手架的工程并不复杂，主要就是通过 freemarker 对各类定义的 ftl 模板文件，生成对应的系统框架结构。这里包括：工程主体、框架结构、启动类、配置文件、测试类等，也可以结合自身需求把对应 ORM 的类和映射关系生成出来。
 
@@ -155,7 +155,7 @@ public interface IProjectGenerator {
 
 **什么是 FreeMarker?**
 
-![什么是 FreeMarker?](https://bugstack.cn/assets/images/2020/all-28-6.png)
+![什么是 FreeMarker?](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\37f2a126-7979-4736-98a3-ba3e307343cd.jpg)
 
 FreeMarker 是一款 模板引擎： 即一种基于模板和要改变的数据， 并用来生成输出文本(HTML网页，电子邮件，配置文件，源代码等)的通用工具。 它不是面向最终用户的，而是一个Java类库，是一款程序员可以嵌入他们所开发产品的组件。
 
@@ -337,14 +337,14 @@ public void test_IProjectGenerator() throws Exception {
 
 **测试结果**
 
-![脚手架创建工程结构](https://bugstack.cn/assets/images/2020/all-28-7.png)
+![脚手架创建工程结构](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\a994a63a-bc74-4f55-b582-e29bcdfe8d2a.jpg)
 
 - 脚手架把创建出来的工程生成到 test-classes 下，这个路径也可以配置到其他路径里。
 - 有了新生成的工程就可以通过 IDEA 打开了，与我们手动创建的工程是一样的。
 
 ## 五、源码下载
 
-![](https://bugstack.cn/assets/images/2020/all-28-8.png)
+![](res\2021-03-14-不重复造轮子只是骗小孩子的，教你手撸 SpringBoot 脚手架！.md\acb2784f-a52c-49e3-82f4-366832d55fc5.jpg)
 
 - 源码下载：[关注公众号：bugstack虫洞栈](https://bugstack.cn/assets/images/qrcode.png)，回复：`脚手架`
 - 项目介绍：SpringBoot 脚手架，简化项目构建。目前的项目工程还比较简单，非常适合新人学习使用。后续我们会在这个版本的基础上陆续完善一些功能，把RPC、MQ、注册中心、网关、等各类组件融合进来，方便选择性的构建和扩展。

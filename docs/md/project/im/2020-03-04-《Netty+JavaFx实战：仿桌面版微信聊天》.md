@@ -32,7 +32,7 @@ excerpt: 本专栏是作者小傅哥使用JavaFx、Netty4.x、SpringBoot、Mysql
 
 ## 二、工程源码
 
-![](https://bugstack.cn/assets/images/2020/project.jpg)
+![](res\2020-03-04-《Netty+JavaFx实战：仿桌面版微信聊天》.md\0baea09e-6e28-4d45-a87d-a7681a2783d2.jpg)
 
 ## 三、功能概述
 
@@ -46,25 +46,25 @@ excerpt: 本专栏是作者小傅哥使用JavaFx、Netty4.x、SpringBoot、Mysql
 
 ---
 
-![](https://bugstack.cn/assets/images/2020/p-xmind.png)
+![](res\2020-03-04-《Netty+JavaFx实战：仿桌面版微信聊天》.md\a303de8f-7e57-4199-88e7-7650c724ac26.jpg)
 
 ## 四、项目演示
 
 >登陆页面
 
-![登陆页面](https://bugstack.cn/assets/images/2020/ui-00.png)
+![登陆页面](res\2020-03-04-《Netty+JavaFx实战：仿桌面版微信聊天》.md\004ce2d0-6bb6-4c65-b1a7-60c31a6ff217.jpg)
 
 >聊天页面
 
-![聊天页面](https://bugstack.cn/assets/images/2020/ui-01.png)
+![聊天页面](res\2020-03-04-《Netty+JavaFx实战：仿桌面版微信聊天》.md\857e7099-da15-4a71-9b80-3f01d9ccf0bc.jpg)
 
 >添加好友
 
-![添加好友](https://bugstack.cn/assets/images/2020/ui-02.png)
+![添加好友](res\2020-03-04-《Netty+JavaFx实战：仿桌面版微信聊天》.md\98e72d63-cb1f-4077-84a2-c9af70c74097.jpg)
 
 >消息提醒
 
-![消息提醒](https://bugstack.cn/assets/images/2020/ui-05.png)
+![消息提醒](res\2020-03-04-《Netty+JavaFx实战：仿桌面版微信聊天》.md\29fba6c5-7639-4cde-aece-36504bd4c7cc.jpg)
 
 ## 五、专栏学习
 

@@ -26,7 +26,7 @@ lock: need
 
 ## 案例说明
 通过在个人Git创建配置服务工程，开启Webhooks服务添加回调钩子http://xxx:port/actuator/refresh在更新配置后自动刷新服务配置内容，如图；
-![微信公众号：bugstack虫洞栈 & Git配置中心Webhooks刷新服务配置](https://bugstack.cn/assets/images/pic-content/2019/11/springcloud-6-1.png)
+![微信公众号：bugstack虫洞栈 & Git配置中心Webhooks刷新服务配置](res\2019-11-06-Spring Cloud六《基于Github Webhook动态刷新服务配置》.md\22db3fea-c1eb-47e9-a10e-29cf10e614d1.jpg)
 
 ## 代码示例
 

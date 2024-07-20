@@ -27,7 +27,7 @@ lock: need
 那么实际开发大泥球架构时，不只是会遇到上面的问题，还可能会遇到工期很赶加个人也不提升效率，反复交接代码扶不过三代等等，因此我们将服务拆分为独立单体具备此核心域完整功能的系统是非常必要的。
 
 如图，是微服务数据库使用的一种思想，我们希望路由层从最开始就被执行，用户分群动态扩展
-![微信公众号：bugstack虫洞栈 & 微服务数据库路由](https://bugstack.cn/assets/images/pic-content/2019/10/ddd-03-1.png)
+![微信公众号：bugstack虫洞栈 & 微服务数据库路由](res\2019-10-17-DDD专题案例三《领域驱动设计架构基于SpringCloud搭建微服务》.md\c5d46426-64ad-4984-8ee0-70a3ea8446b5.jpg)
 
 - 本节案例代码：[https://github.com/fuzhengwei/itstack-demo-ddd](https://github.com/fuzhengwei/itstack-demo-ddd)
 - 新版DDD讲解：[架构的本质之 DDD 架构](https://bugstack.cn/md/road-map/ddd.html)
@@ -328,11 +328,11 @@ zuul:
 按照顺序启动；itstack-demo-ddd-eureka-server、itstack-demo-ddd-case｛可以模拟启动多个｝、itstack-demo-ddd-feign、itstack-demo-ddd-zuul
 
 >访问；http://localhost:8989/ | 服务中心
-![微信公众号：bugstack虫洞栈 & 服务中心](https://bugstack.cn/assets/images/pic-content/2019/10/ddd-03-2.png)
+![微信公众号：bugstack虫洞栈 & 服务中心](res\2019-10-17-DDD专题案例三《领域驱动设计架构基于SpringCloud搭建微服务》.md\d0ffea79-49be-40b4-b1b4-9067f9b7a80e.jpg)
 
 >访问：http://localhost:9191/route-a/api/queryTreeSummaryInfo?treeId=10001 | 通过网关路由调用DDD服务接口
 
-![微信公众号：bugstack虫洞栈 & 调用网关接口测试](https://bugstack.cn/assets/images/pic-content/2019/10/ddd-03-3.png)
+![微信公众号：bugstack虫洞栈 & 调用网关接口测试](res\2019-10-17-DDD专题案例三《领域驱动设计架构基于SpringCloud搭建微服务》.md\e11ed51d-f225-49ae-94ed-755d08b7ee88.jpg)
 
 
 ## 综上总结

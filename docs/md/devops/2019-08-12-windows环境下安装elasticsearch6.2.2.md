@@ -23,15 +23,15 @@ lock: need
 
 ## 安装环境
 **1、Elasticsearch 6.2.2 下载** [https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-2-2](https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-2-2)
-![](https://bugstack.cn/assets/images/pic-content/2019/08/elasticsearch6.6.2.png)
+![](res\2019-08-12-windows环境下安装elasticsearch6.2.2.md\9afb17d5-0afb-4287-90f3-145334112920.jpg)
 
 **2、JDK 1.8 （jdk1.7及以下不能支持Elasticsearch）下载** [https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-![](https://bugstack.cn/assets/images/pic-content/2019/08/es-3.png)
+![](res\2019-08-12-windows环境下安装elasticsearch6.2.2.md\38d3a9e5-1449-4e4a-8da4-fa250c218276.jpg)
 
 **3、安装cmd进入elasticsearch-6.2.2\bin，执行elasticsearch.bat**
-![](https://bugstack.cn/assets/images/pic-content/2019/08/es-1.png)
+![](res\2019-08-12-windows环境下安装elasticsearch6.2.2.md\46ec2717-11c3-40b1-8fcf-ef1999b064cb.jpg)
 
 **4、启动完成后打开http://localhost:9200 ｛默认端口9200｝**
-![](https://bugstack.cn/assets/images/pic-content/2019/08/es-2.png)
+![](res\2019-08-12-windows环境下安装elasticsearch6.2.2.md\5941afea-ab1b-4265-b4d3-42b242afaa6c.jpg)
 
 ------------

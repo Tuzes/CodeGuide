@@ -20,7 +20,7 @@ Hystrix Dashboard 可以定时收集接口调用信息；时长、次数、性�
 
 ## 案例说明
 案例通过添加itstack-demo-springcloud-turbine工程模块，将单体监控汇总在统一页面进行管理，此时的监控模型，如图；
-![微信公众号：bugstack虫洞栈 & Turbine监控模型](https://bugstack.cn/assets/images/pic-content/2019/11/springcloud-5-1.png)
+![微信公众号：bugstack虫洞栈 & Turbine监控模型](res\2019-11-05-Spring Cloud五《Turbine 监控信息聚合展示 Hystrix》.md\37b9c21f-b089-4167-bd15-11e1833047ec.jpg)
 
 ## 环境准备
 1. jdk 1.8、idea2018、Maven3
@@ -545,7 +545,7 @@ turbine:
 
 ## 测试验证
 1. 启动itstack-demo-springcloud-hystrix-dashboard，访问；http://localhost:8989/hystrix
-![微信公众号：bugstack虫洞栈 & hystrix-dashboard](https://bugstack.cn/assets/images/pic-content/2019/11/springcloud-4-3.png)
+![微信公众号：bugstack虫洞栈 & hystrix-dashboard](res\2019-11-05-Spring Cloud五《Turbine 监控信息聚合展示 Hystrix》.md\4409b256-4d62-481a-a8ea-1b90be8a20f7.jpg)
 
 2. 分别启动如下系统模拟；
 	1. itstack-demo-springcloud-eureka-server  服务注册发现中心
@@ -558,7 +558,7 @@ turbine:
    1. 在hystrix-dashboard监控页面｛http://localhost:8989/hystrix｝，输入；http://localhost:8080/turbine.stream
    2. 刷新访问两个调用方接口；http://localhost:9001/api/queryUserInfo?userId=111、http://localhost:9002/api/queryUserInfo?userId=111
    3. 回看刚才的监控页面；http://localhost:8989/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8080%2Fturbine.stream，已经可以看到监控信息汇总，如图；
-      ![微信公众号：bugstack虫洞栈 & 监控信息汇总](https://bugstack.cn/assets/images/pic-content/2019/11/springcloud-5-2.png)
+      ![微信公众号：bugstack虫洞栈 & 监控信息汇总](res\2019-11-05-Spring Cloud五《Turbine 监控信息聚合展示 Hystrix》.md\14942e4c-5552-44ef-9d1c-a95fafce3159.jpg)
 
 ## 综上总结
 1. 通过Turbine服务我们可以将监控信息汇总到一起进行查看，这样更加方便实际应用。

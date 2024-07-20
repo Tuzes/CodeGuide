@@ -257,7 +257,7 @@ public void afterPropertiesSet() throws ClassNotFoundException, NoSuchMethodExce
 
 - **源码：220行：** 获取对象时返回 this.jobDetail，这也就解释了为什么 MethodInvokingJobDetailFactoryBean 初始化后直接赋值给了一个 JobDetail ；
 
-	![微信公众号：bugstack虫洞栈 & Schedule.xml](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-schedule-01.png)
+	![微信公众号：bugstack虫洞栈 & Schedule.xml](res\2020-01-01-[源码解析]Spring定时任务Quartz执行全过程源码解读.md\ec3779ab-3fb7-4e89-bdfa-a7a933cb07f8.jpg)
 
 
 ### 3. 定义执行计划(CronTriggerFactoryBeann)
@@ -381,7 +381,7 @@ schedulerFactoryBean.start();
 
 这个过程较长包括：调度工厂、线程池、注册任务等等，整体核心加载流程如下；
 
-![微信公众号：bugstack虫洞栈 & 调度工程初始化流程](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-schedule-02.png)
+![微信公众号：bugstack虫洞栈 & 调度工程初始化流程](res\2020-01-01-[源码解析]Spring定时任务Quartz执行全过程源码解读.md\553bc833-24f1-47da-81e2-c3c1d77c5045.jpg)
 
 - 整个加载过程较长，抽取部分核心代码块进行分析，其中包括的类；
 	- StdScheduler
@@ -555,7 +555,7 @@ private boolean addTriggerToScheduler(Trigger trigger) throws SchedulerException
 
 案例中使用硬编码方式调用 schedulerFactoryBean.start() 启动线程服务。线程的协作通过Object sigLock来实现，关于sigLock.wait()方法都在QuartzSchedulerThread的run方法里面，所以sigLock唤醒的是只有线程QuartzSchedulerThread。核心流程如下；
 
-![微信公众号：bugstack虫洞栈 & 调度启动流程](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-schedule-03.png)
+![微信公众号：bugstack虫洞栈 & 调度启动流程](res\2020-01-01-[源码解析]Spring定时任务Quartz执行全过程源码解读.md\7ad7287d-d48c-439c-b237-5301f974e318.jpg)
 
 这个启动过程中，核心的代码类，如下；
 - StdScheduler

@@ -307,19 +307,19 @@ public class ApiTest {
 ## 测试结果
 >启动SpringBoot *NettyApplication.main >run
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-02-1-1.png)
+![](res\2019-08-16-netty案例，netty4.1中级拓展篇一《Netty与SpringBoot整合》.md\18c0513e-4482-40a9-9700-a2143e1b1e90.jpg)
 
 >启动ApiTest
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-02-1-2.png)
+![](res\2019-08-16-netty案例，netty4.1中级拓展篇一《Netty与SpringBoot整合》.md\f20e574a-a5e0-4c08-8f8f-fbd18d02ebb7.jpg)
 
 >Web访问 *http://localhost:8080/nettyserver/localAddress
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-02-1-3.png)
+![](res\2019-08-16-netty案例，netty4.1中级拓展篇一《Netty与SpringBoot整合》.md\5969962d-9dfb-45ff-a0a4-0a43cf29ba05.jpg)
 
 >Web访问 *http://localhost:8080/nettyserver/isOpen
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-02-1-4.png)
+![](res\2019-08-16-netty案例，netty4.1中级拓展篇一《Netty与SpringBoot整合》.md\76b0e364-ae51-42c6-98fc-32bf110088d0.jpg)
 
 >服务端执行结果
 

@@ -177,11 +177,11 @@ public class NettyServer {
 ## 测试结果
 >启动服务端NettyServer
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-1-06-1.png)
+![](res\2019-08-09-netty案例，netty4.1基础入门篇六《NettyServer群发消息》.md\4b481ea0-2845-4c9e-8c10-45fe6cc7ba09.jpg)
 
 >启动**2**模拟器NetAssist 互相发送数据测试
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-1-06.png)
+![](res\2019-08-09-netty案例，netty4.1基础入门篇六《NettyServer群发消息》.md\b9aa5b3f-b97c-49b5-9066-41719a7ef11a.jpg)
 
 >执行结果
 

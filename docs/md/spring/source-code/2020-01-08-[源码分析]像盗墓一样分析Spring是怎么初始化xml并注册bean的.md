@@ -22,7 +22,7 @@ lock: need
 
 那么，这一篇就从 bean 的加载开始，从 xml 配置文件解析 bean 的定义，到注册到 Spring 的核心类 DefaultListableBeanFactory ，盗墓过程如下；
 
-![微信公众号：bugstack虫洞栈 & 盗墓](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-spring-02.png)
+![微信公众号：bugstack虫洞栈 & 盗墓](res\2020-01-08-[源码分析]像盗墓一样分析Spring是怎么初始化xml并注册bean的.md\343799ac-c9d8-4471-b1bd-2210f605ca73.jpg)
 
 从上图可以看到从 xml 解析出 bean 到注册完成需要经历过8个核心类以及22个方法跳转流程，这也是本文后面需要重点分析的内容。好！那么就当为了你的**钱程**一起盗墓吧！
 
@@ -54,7 +54,7 @@ itstack-demo-code-spring
 
 整个 bean 注册过程核心功能包括；配置文件加载、工厂创建、XML解析、Bean定义、Bean注册，执行流程如下；
 
-![微信公众号：bugstack虫洞栈 & 盗墓](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-spring-01.png)
+![微信公众号：bugstack虫洞栈 & 盗墓](res\2020-01-08-[源码分析]像盗墓一样分析Spring是怎么初始化xml并注册bean的.md\d7e1f303-2f62-481f-b99c-03dfc721a31a.jpg)
 
 从上图的注册 bean 流程看到，核心类包括；
 - ClassPathXmlApplicationContext
@@ -622,7 +622,7 @@ public void registerBeanDefinition(String beanName, BeanDefinition beanDefinitio
 
 - 看下最终的注入结果，嗯！我们的盗墓挖到了一点宝物；
 
-	![微信公众号：bugstack虫洞栈 & bean注册结果](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-spring-04.png)
+	![微信公众号：bugstack虫洞栈 & bean注册结果](res\2020-01-08-[源码分析]像盗墓一样分析Spring是怎么初始化xml并注册bean的.md\fcf4a22f-7942-49c2-8bd2-5e94652f91ac.jpg)
 
 
 ## 五、综上总结

@@ -70,7 +70,7 @@ guide-idea-plugin-pmd
 
 **RandomRule**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211222-7-01.png)
+![](res\2021-12-22-《IntelliJ IDEA 插件开发》第7节：通过Inspection机制，为静态代码安全审查.md\321b0b50-b9a3-4f69-a0f2-dd97cf307305.jpg)
 
 ```java
 PsiElementFactory factory = JavaPsiFacade.getElementFactory(project);
@@ -162,17 +162,17 @@ public PsiElementVisitor buildVisitor(@NotNull ProblemsHolder holder, boolean is
 
 **启动插件**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211222-7-02.png)
+![](res\2021-12-22-《IntelliJ IDEA 插件开发》第7节：通过Inspection机制，为静态代码安全审查.md\e886aba8-0fd7-4c6a-a48e-49ba9dd973a9.jpg)
 
 - 如果你下载代码后，没有 Plugin 可以自己配置一下，在 Tasks 中配置 `:runIde`
 
 **错误提醒**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211222-7-03.png)
+![](res\2021-12-22-《IntelliJ IDEA 插件开发》第7节：通过Inspection机制，为静态代码安全审查.md\8588707f-afa3-49d5-b989-6d1aff8d876b.jpg)
 
 **错误详情**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211222-7-04.png)
+![](res\2021-12-22-《IntelliJ IDEA 插件开发》第7节：通过Inspection机制，为静态代码安全审查.md\693fae3a-4305-49f4-b62b-cee229921557.jpg)
 
 - 当你点击 Fix，那么接下来就可以进行自动替换代码并修复了，就是把 `Random random = new Random()` 替换为 `SecureRandom random = new SecureRandom();`
 - 其他2个也可以在获取代码后进行测试验证，一个是IP，另外一个是使用 `ParserConfig.getGlobalInstance().setAutoTypeSupport(true);` 的错误提醒。

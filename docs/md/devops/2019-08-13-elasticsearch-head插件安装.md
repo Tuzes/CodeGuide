@@ -22,11 +22,11 @@ tag: [ddd,itstack-demo-any]
 1. 安装[node.js](https://nodejs.org/en/download/)并配置环境变量PATH{path:D:\Program Files\nodejs\}
 
 - [nodejs下载](https://nodejs.org/en/download/)
-![](https://bugstack.cn/assets/images/pic-content/2019/08/nodejs.png)
+![](res\2019-08-13-elasticsearch-head插件安装.md\c1f5f02b-78db-44cc-a189-f7cbc99a8a31.jpg)
 - 执行安装，配置环境变量{path:D:\Program Files\nodejs\}
-![](https://bugstack.cn/assets/images/pic-content/2019/08/nodejspath.png)
+![](res\2019-08-13-elasticsearch-head插件安装.md\9011fdff-af32-493f-ad0c-5410eb1a030b.jpg)
 - 查看nodejs版本；node -v
-![](https://bugstack.cn/assets/images/pic-content/2019/08/nodejsversion.png)
+![](res\2019-08-13-elasticsearch-head插件安装.md\5495f82f-d78f-4a86-aea3-8248d8677097.jpg)
 
 2. 安装elasticsearch-head
 - [下载elasticsearch-head](https://github.com/mobz/elasticsearch-head)
@@ -72,6 +72,6 @@ Started connect web server on http://localhost:9100
 
 ```
 **运行结果**
-![](https://bugstack.cn/assets/images/pic-content/2019/08/eshead.png)
+![](res\2019-08-13-elasticsearch-head插件安装.md\60e457ea-3726-4465-b0df-995cc92780d1.jpg)
 
 ------------

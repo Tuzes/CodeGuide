@@ -43,7 +43,7 @@ lock: need
 
 为了保障家庭的和谐化解危机，我们通过动态重新加载类，将谢飞机前女友数量修改为`0`并返回。依次安定家庭和谐。~~最终谢飞机会给我钱，当做报酬~~
 
-![德莱联盟，王牌工程师，申请出栈](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-03-1.png)
+![德莱联盟，王牌工程师，申请出栈](res\2020-04-21-字节码编程，Javassist篇三《使用Javassist在运行时重新加载类「替换原方法输出不一样的结果」》.md\815d4f64-212d-4760-a91d-e8a46cd4731f.jpg)
 
 **让谢飞机很慌的方法**
 
@@ -72,7 +72,7 @@ public class ApiTest {
 
 **德莱联盟，王牌工程师，申请出`栈`**
 
-![德莱联盟王牌工程师](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-03-2.jpg)
+![德莱联盟王牌工程师](res\2020-04-21-字节码编程，Javassist篇三《使用Javassist在运行时重新加载类「替换原方法输出不一样的结果」》.md\caadd692-36d9-427b-a4c0-d3a33ab03388.jpg)
 
 ```java
 /**
@@ -133,7 +133,7 @@ public class GenerateClazzMethod {
 
 ### 1. 引入tools.jar
 
-![Open Module Settings，引入tools.jar](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-03-3.png)
+![Open Module Settings，引入tools.jar](res\2020-04-21-字节码编程，Javassist篇三《使用Javassist在运行时重新加载类「替换原方法输出不一样的结果」》.md\978aa542-4a07-4c06-a184-a1239d37cb12.jpg)
 
 ### 2. 配置-agentlib
 
@@ -141,7 +141,7 @@ public class GenerateClazzMethod {
 -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000
 ```
 
-![VM options，配置-agentlib](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-03-4.png)
+![VM options，配置-agentlib](res\2020-04-21-字节码编程，Javassist篇三《使用Javassist在运行时重新加载类「替换原方法输出不一样的结果」》.md\7fcc8103-893e-45a3-a373-6b958f3b5395.jpg)
 
 ### 3. 执行测试
 
@@ -183,11 +183,11 @@ Process finished with exit code -1
 
 **当**看到前女友数量为 *0* 时，谢飞机露出了羞涩的微笑，并兑现了承诺，将*4毛钱*给了王牌工程师`小傅哥`。
 
-![来自谢飞机的`4毛钱`收入](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-03-5.png)
+![来自谢飞机的`4毛钱`收入](res\2020-04-21-字节码编程，Javassist篇三《使用Javassist在运行时重新加载类「替换原方法输出不一样的结果」》.md\8bdf8d39-5e1e-4d75-bef2-a4206e366e24.jpg)
 
 ### 4. 效果演示
 
-![热加载救火，成功拿到4毛钱](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-03-6.gif)
+![热加载救火，成功拿到4毛钱](res\2020-04-21-字节码编程，Javassist篇三《使用Javassist在运行时重新加载类「替换原方法输出不一样的结果」》.md\c45537a4-1ec7-456a-915d-b7aab6d7a140.jpg)
 
 ## 六、总结
 

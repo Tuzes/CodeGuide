@@ -18,7 +18,7 @@ lock: need
 你是否使用过某盘，在前几年我们使用的时候速度飞快，上传下载嗖嗖嗖。但是近年来只要不办会员，速度慢的像蜗牛，当然人家也得赚钱我们能理解。那么这样的限速是怎么实现的呢，我们这个案例使用Netty的流量整形进行限速传输，测试过程中当你把流量整形功能去掉后你就是年费VIP。
 
 流量整形（Traffic Shaping）是一种主动调整流量输出速率的措施。一个典型应用是基于下游网络结点的TP指标来控制本地流量的输出。流量整形与流量监管的主要区别在于，流量整形对流量监管中需要丢弃的报文进行缓存——通常是将它们放入缓冲区或队列内，也称流量整形（Traffic Shaping，简称TS）。当令牌桶有足够的令牌时，再均匀的向外发送这些被缓存的报文。流量整形与流量监管的另一区别是，整形可能会增加延迟，而监管几乎不引入额外的延迟。
-![微信公众号：bugstack虫洞栈](https://bugstack.cn/assets/images/pic-content/2019/09/netty-2-12-1.png)
+![微信公众号：bugstack虫洞栈](res\2019-08-27-netty案例，netty4.1中级拓展篇十二《Netty流量整形数据流速率控制分析与实战》.md\d9f161a0-f597-487d-a330-fcedc150c53b.jpg)
 
 Netty中通过实现抽象类AbstractTrafficShapingHandler，提供了三个流量整形的类；GlobalTrafficShapingHandler、ChannelTrafficShapingHandler、GlobalChannelTrafficShapingHandler；
 

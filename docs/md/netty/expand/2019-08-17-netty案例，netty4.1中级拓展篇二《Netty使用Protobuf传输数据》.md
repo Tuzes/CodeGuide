@@ -366,11 +366,11 @@ E:\itstack\GIT\itstack.org\itstack-demo-netty\itstack-demo-netty-2-02\protoc-3.5
 ```
 >启动NettyServer
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-02-1.png)
+![](res\2019-08-17-netty案例，netty4.1中级拓展篇二《Netty使用Protobuf传输数据》.md\e6eb3424-b9d3-426f-9289-f313dbec5a97.jpg)
 
 >启动NettyClient
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-02-2.png)
+![](res\2019-08-17-netty案例，netty4.1中级拓展篇二《Netty使用Protobuf传输数据》.md\b89ee1c1-448d-41fb-92b3-f64476315584.jpg)
 
 >服务端执行结果
 

@@ -27,7 +27,7 @@ lock: need
 
 在上一章节中我们通过扩展创建工程向导，添加我们需要创建DDD工程脚手架的步骤，最终提供一个DDD开发框架。那么在这个DDD工程开发框架中，还缺少一部分基于数据库表信息自动生成对应PO、DAO、Mapper文件的功能。
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-01.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\71a285e4-c2f1-4355-aeac-2bd1d032258f.jpg)
 
 - 那么本章节我们就来在工程中扩展这部分内容，实际操作的效果就是我们可以在工程上通过鼠标右键的方式，唤出添加ORM代码块的窗体，通过选择库表的方式，使用 freemarker 自动生成代码。
 - 在生成的代码块中需要完成对所需要包的引入，同时会使用到 lombok 注解的方式替代PO对象中的get、set方法，以减少代码量逻辑的创建。
@@ -99,7 +99,7 @@ guide-idea-plugin-orm
 
 **ORMSettingsUI**：咱们先把用于创建代码配置的面板创建出来，有了画面，就好进入了。
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-02.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\6700ce09-cd1e-4b46-b439-e3020f8a1f71.jpg)
 
 - 面板包括生成 PO、DAO、XML 的代码路径，以及配置数据库和选择表的内容。
 - 操作过程就是在你配置好了这些基本信息后，就可以选择查询表名，并选择好你要给哪几个表生成对应的ORM代码了。
@@ -108,7 +108,7 @@ guide-idea-plugin-orm
 
 首先我们需要创建一个 Action 实现类，通过 `New -> Plugin DevKit -> Action`
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-03.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\2c852434-9bbc-4c96-8903-572ac8969d83.jpg)
 
 **cn.bugstack.guide.idea.plugin.action.CodeGenerateAction**
 
@@ -158,7 +158,7 @@ ea-plugin>
 
 #### 4.1 选择框事件
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-04.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\3201655f-c41f-476c-9ba2-06cc3351a02c.jpg)
 
 ```java
 // 选择PO生成目录
@@ -177,7 +177,7 @@ this.poButton.addActionListener(e -> {
 
 #### 4.2 数据表事件
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-05.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\0fe9352b-183d-46e7-a905-447ac991b353.jpg)
 
 ```java
 this.selectButton.addActionListener(e -> {
@@ -235,7 +235,7 @@ public void apply() {
 
 ### 5. 代码生成领域服务
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-06.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\ec661fb6-b07f-416f-aa1c-bef1f043b8ac.jpg)
 
 - 用于创建PO、DAO、Mapper的代码块的代码主要是这里实现的，核心在于提供了一个抽象类以及对应的实现类，因为处理代码生成需要使用到 freemarker 所以就在抽象类里包装了下，这样可以免去实现类中还需要关心这部分逻辑。
 
@@ -276,15 +276,15 @@ protected void generateORM(Project project, CodeGenContextVO codeGenContext) {
 
 **1. 鼠标右键，选择菜单**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-07.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\abcaf0f4-5ada-4465-afe8-1e28cdde49b5.jpg)
 
 **2. 配置页面，配置信息**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-08.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\49a0fc60-0734-4ec1-bc5f-5ee2a71ee8ed.jpg)
 
 **3. 自动创建，生成代码**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211207-5-09.png)
+![](res\2021-12-08-《IntelliJ IDEA 插件开发》第五节：IDEA工程右键菜单，自动生成ORM代码.md\f56245bf-c115-4c70-b3d8-3837076353f5.jpg)
 
 - 好了，选择代码块就这么嗖的创建了出来，是不是非常方便，而且可以满足你在任何时候的把新的库表代码补充进来，减少了手敲CRUD操作。
 

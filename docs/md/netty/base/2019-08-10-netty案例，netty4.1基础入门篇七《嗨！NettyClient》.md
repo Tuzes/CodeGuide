@@ -90,11 +90,11 @@ public class NettyClient {
 ## 测试结果
 >启动模拟器NetAssist 设置TCP Server
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-1-07-1.png)
+![](res\2019-08-10-netty案例，netty4.1基础入门篇七《嗨！NettyClient》.md\e40cf7dc-e0c3-4830-bcae-049309b752b4.jpg)
 
 >启动客户端NettyClient
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-1-07-2.png)
+![](res\2019-08-10-netty案例，netty4.1基础入门篇七《嗨！NettyClient》.md\9e6213a7-0e4a-43fc-aac3-3c87fe181910.jpg)
 
 >执行结果
 

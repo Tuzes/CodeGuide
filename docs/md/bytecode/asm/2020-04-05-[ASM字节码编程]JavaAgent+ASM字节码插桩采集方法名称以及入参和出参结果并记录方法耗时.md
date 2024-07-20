@@ -37,7 +37,7 @@ lock: need
 
 ## 三、实现方案
 
-![字节码增强实现方案](https://bugstack.cn/assets/images/2020/itstack-demo-asm-02-1.png)
+![字节码增强实现方案](res\2020-04-05-[ASM字节码编程]JavaAgent+ASM字节码插桩采集方法名称以及入参和出参结果并记录方法耗时.md\7f7f7479-ebe3-40a9-aa89-a06fa51f12d6.jpg)
 
 按照图中我们使用 `javaAgent` 的 `primain` 方法，使用 `asm` 进行字节码增强，以便于输出我们的监控信息。最终在我们把字节码增强后，程序所执行的就是我们的新的方法字节码，从而也就可以获取到我们需要的信息。那么，接下来我们开始一步步上线这些功能。
 
@@ -137,7 +137,7 @@ public class ProfilingTransformer implements ClassFileTransformer {
 
 ### 4. 字节码方法解析
 
-![字节码方法解析](https://bugstack.cn/assets/images/2020/itstack-demo-asm-02-2.png)
+![字节码方法解析](res\2020-04-05-[ASM字节码编程]JavaAgent+ASM字节码插桩采集方法名称以及入参和出参结果并记录方法耗时.md\14c41ce9-7645-4696-9cce-aa19c7fde0e3.jpg)
 
 - 当程序启动加载的时候，每个类的每一个方法都会被监控到。类的名称、方法的名称、方法入参出参的描述等，都可以在这里获取。
 - 为了可以在后续监控处理不至于每一次都去传参（方法信息）浪费消耗性能，一般这里都会给每个方法生产一个全局防重的 `id` ，通过这个 `id` 就可以查询到对应的方法。

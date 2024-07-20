@@ -234,14 +234,14 @@ public List<Node> searchPrefix(String prefix) {
 
 **启动插件**
 
-![](https://bugstack.cn/images/article/assembly/assembly-220122-9-01.png)
+![](res\2022-01-22-《IntelliJ IDEA 插件开发》第9节：加载文件生成链表单词树，输入属性时英文校准提醒.md\00df6f5f-d73d-48ea-ab28-5222374924d9.jpg)
 
 - 在 Grandle -> Tasks -> intellj -> runIde 进行启动
 - 启动后打开一个你的工程进行输入测试属性信息进行测试
 
 **测试插件**
 
-![](https://bugstack.cn/images/article/assembly/assembly-220122-9-02.png)
+![](res\2022-01-22-《IntelliJ IDEA 插件开发》第9节：加载文件生成链表单词树，输入属性时英文校准提醒.md\2d070815-3c13-446c-85d1-d4dcb0950b72.jpg)
 
 - 现在当你输入一个单词的时候，就可以把我们存放好在文件里的单词提醒给用户了。*很好玩吧*
 

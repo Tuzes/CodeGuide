@@ -412,14 +412,14 @@ spring:
 
 >启动SpringBoot *Netty会随着启动
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-05-0.png)
+![](res\2019-08-20-netty案例，netty4.1中级拓展篇五《基于Netty搭建WebSocket，模仿微信聊天页面》.md\c31b9cd7-1309-4be6-b0ce-185c040ab563.jpg)
 
 
 >打开网页websocket客户端；http://localhost:8080/index
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-05-1.png)
+![](res\2019-08-20-netty案例，netty4.1中级拓展篇五《基于Netty搭建WebSocket，模仿微信聊天页面》.md\d97fb34b-3966-4ad8-8851-b293c01cf49c.jpg)
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-05-6.png)
+![](res\2019-08-20-netty案例，netty4.1中级拓展篇五《基于Netty搭建WebSocket，模仿微信聊天页面》.md\8de3fdfd-f067-48d3-85c4-d6c0a77fc53c.jpg)
 
 >服务端执行结果
 

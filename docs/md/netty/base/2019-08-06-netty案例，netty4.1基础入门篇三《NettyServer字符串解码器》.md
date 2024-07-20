@@ -140,11 +140,11 @@ public class NettyServer {
 ## 测试结果
 >启动服务端NettyServer
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/nettyserver02.png)
+![](res\2019-08-06-netty案例，netty4.1基础入门篇三《NettyServer字符串解码器》.md\d549177d-cd9d-46ca-9868-37e9efe06c9e.jpg)
 
 >启动模拟器NetAssist
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/nettyserver03.png)
+![](res\2019-08-06-netty案例，netty4.1基础入门篇三《NettyServer字符串解码器》.md\e483d302-520b-4a31-a009-15c69b80df28.jpg)
 
 >执行结果
 

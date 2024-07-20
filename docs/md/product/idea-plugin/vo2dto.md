@@ -18,7 +18,7 @@ lock: no
 
 捧一个，喷一个，很多码农都不会多一点思路看问题，总是喜欢用矛和盾在显示自己有点`本事`。Github 你写文章说你不如做开源代码有价值，你写了开源代码说你这没有意义，那你问他贡献了啥，他只贡献了嘴。*聊理论吹的叮当的，写代码搞的稀得囊的*
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-01.png)
+![](res\vo2dto.md\35e5e0fb-8107-48a6-8f75-fa844d51dc53.jpg)
 
 - 好在，你这一路上能遇到很多`同好`，他们能真诚的给你意见、提供思路、帮助解决，让你们一群有技术初心的人，不断的成长。
 - 这可能就是技术创作的土壤，如果大家都不施肥，反而还要过来用力的踩踩这块地，那最后大家都只能一起卷死在这，谁也不要创新。*加油，我希望你可以和我一起做点事情*
@@ -33,7 +33,7 @@ lock: no
 
 **所以**，小傅哥结合 IDEA Plugin 插件开发的能力，通过鼠标定位到转换对象上，一键织入需要生成一堆的 `x.set(y.get)` 方法，并且在几次优化中以及可以支持父类对象、lombok插件。演示图如下：
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-02.png)
+![](res\vo2dto.md\12730ab6-33b4-428a-be9d-36b6d6d7a8ad.jpg)
 
 - 支持：复制一个对象，光标定位另外一个对象上，鼠标右键 Generate -> Vo2Dto 一键生成转换代码
 - 支持：不复制对象，直接在转换可以生成空的 set 对象，方便自由添加内容
@@ -45,25 +45,25 @@ lock: no
 
 ### 1. 请用英语描述
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-03.png)
+![](res\vo2dto.md\fb311873-d3b2-4e66-a027-1b908a99901f.jpg)
 
 - 这是我第一次发布插件接收到的邮件提醒，告诉我在你的 plugin.xml 中，要用英语描述。*一直没看，以为垃圾邮件*
 
 ### 2. 请用英文截图
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-04.png)
+![](res\vo2dto.md\ce9bdd13-1fcb-4b87-899b-2e4b29c914a4.jpg)
 
 - 告诉我，你的截图要用英语的，这样我才能给你通过。
 
 ### 3. 说我截图没用
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-05.png)
+![](res\vo2dto.md\d2ce2188-4c40-416d-b6b5-791996e97fcf.jpg)
 
 - 问我你确定需要这个截图吗，他觉得没啥意义
 
 ### 4. 终于发布出去
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-06.png)
+![](res\vo2dto.md\f4708553-b7c4-43d7-9824-a30fee7385d6.jpg)
 
 - 改了注释、删了截图，终于迎来曙光。*你说，不发布一次，你会知道遇到这些吗！*
 
@@ -77,13 +77,13 @@ lock: no
 
 不过现在好了，你可以直接在 IDEA 中搜索安装小傅哥写的插件了，哈哈哈，这种没做过的事搞一次，总是让人很兴奋！
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-07.png)
+![](res\vo2dto.md\b05b5afb-a882-44f2-bc0b-fdc54e3d94a4.jpg)
 
 - 看到能搜索到 vo2dto 并顺利安装使用，我的心舒服了。*没有人能阻挡你最技术的热爱，即使你来我这踩两脚*
 
 ### 2. 使用介绍
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-08.png)
+![](res\vo2dto.md\9ef060cc-4e76-47e3-bb65-12bf20570230.jpg)
 
 如图所示，你只需要很简单的步骤，既可以快速且准确的帮你生成对应的转换代码，在一些场景里使用还是非常 `Good` 的！操作步骤：
 
@@ -93,7 +93,7 @@ lock: no
 
 ### 3. 源码共享
 
-![](https://bugstack.cn/images/article/assembly/assembly-211228-09.png)
+![](res\vo2dto.md\0d407090-965a-41d0-bfff-98e9540f3ae6.jpg)
 
 - 源码：[https://github.com/fuzhengwei/vo2dto](https://github.com/fuzhengwei/vo2dto)
 - 说明：有同好的技术人共建才会让一件小事不断的优秀起来，所以我把这块代码共享出来，我们可以一起做一个非常短小精致的产品，来帮助我们自己完成一些便捷的开发处理。

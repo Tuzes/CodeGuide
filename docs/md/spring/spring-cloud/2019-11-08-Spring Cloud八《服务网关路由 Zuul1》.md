@@ -21,7 +21,7 @@ lock: need
 **Spring Cloud Zuul**
 
 Spring Cloud Zuul 路由是微服务架构的不可或缺的一部分，提供动态路由、监控、弹性、安全等的边缘服务。Zuul 是 Netflix 出品的一个基于 JVM 路由和服务端的负载均衡器。
-![微信公众号：bugstack虫洞栈 & Spring Cloud Zuul](https://bugstack.cn/assets/images/pic-content/2019/11/springcloud-8-1.jpg)
+![微信公众号：bugstack虫洞栈 & Spring Cloud Zuul](res\2019-11-08-Spring Cloud八《服务网关路由 Zuul1》.md\403a8fa6-a76b-48f3-b0c9-f07a19d4995d.jpg)
 
 ## 环境准备
 1. jdk 1.8、idea2018、Maven3

@@ -162,7 +162,7 @@ Process finished with exit code -1
 hi 微信公众号：bugstack虫洞栈 | 欢迎关注并获取专题文章和源码
 ```
 
-![微信公众号：bugstack虫洞栈](https://bugstack.cn/assets/images/pic-content/2019/09/netty-2-11-1.png)
+![微信公众号：bugstack虫洞栈](res\2019-08-26-netty案例，netty4.1中级拓展篇十一《Netty基于ChunkedStream数据流切块传输》.md\bf1e3d76-8012-402e-bf3f-3a19a173bcb6.jpg)
 
 微信搜索「**bugstack虫洞栈**」公众号，关注后回复「**Netty专题案例**」获取本文源码&更多原创专题案例！
 

@@ -85,7 +85,7 @@ guide-idea-plugin-tab
 
 **接下来**，我们就分别看下每个核心功能点的实现过程，这个过程中你可以提前把代码下载下来，对照着学习会更加容易理解。
 
-![](https://bugstack.cn/images/article/assembly/assembly-211118-3-01.png)
+![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\56ac5508-ae21-4c6e-b754-ca6743b7f71a.jpg)
 
 1. 实现 ToolWindowFactory 开发一个底部的窗体，用于承载所需的内容
 2. 左侧是侧边工具栏，配置自选股、刷新股票指数
@@ -97,7 +97,7 @@ guide-idea-plugin-tab
 
 #### 2.1 自选股配置窗体
 
-![](https://bugstack.cn/images/article/assembly/assembly-211118-3-04.png)
+![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\c391634d-440d-4226-bd72-685f4a8c7a1f.jpg)
 
 ```java
 public class GidConfig implements Configurable {
@@ -136,7 +136,7 @@ public class GidConfig implements Configurable {
 
 #### 2.2 股票展示窗体
 
-![](https://bugstack.cn/images/article/assembly/assembly-211118-3-05.png)
+![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\9dfd428d-df84-4205-91b0-2d4a3b0c7f35.jpg)
 
 ```java
 public class ConsoleUI {
@@ -445,12 +445,12 @@ public class DataSetting implements PersistentStateComponent<DataState> {
 - 无论什么功能开发，在开始之前都需要把这些`零碎的事情`处理完，才能进行代码开发，这个过程也叫做技术调研到设计和评审。就像现在我们需要进行股票信息的查询，那么就需要找到一个可以提供数据查询的接口，看看这个接口如何申请使用，以及返回的对象都有哪些字段，是否符合我们的预期。
 - 这里小傅哥找到了一个聚合数据的接口，不过只能免费`100次/天`调用，如果你有更好的可以更换下。
   
-  ![](https://bugstack.cn/images/article/assembly/assembly-211118-3-02.png)
+  ![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\460494b8-ec1b-4233-a68c-a9b6f301dcc5.jpg)
 
 - 接口：[http://web.juhe.cn:8080/finance/stock/hs?gid=sz000651&key=自己申请](http://web.juhe.cn:8080/finance/stock/hs?gid=sz000651&key=自己申请) - 这里的 key 需要自己申请
 - 数据：
 
-  ![](https://bugstack.cn/images/article/assembly/assembly-211118-3-03.png)	
+  ![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\5618b45c-7bf2-4231-b3a9-ffed32cb418e.jpg)	
 
 #### 6.2 服务封装
 
@@ -484,7 +484,7 @@ public class StockImpl implements IStock {
 
 ## 四、测试验证
 
-![](https://bugstack.cn/images/article/assembly/assembly-211118-3-06.png)
+![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\63d4c118-88d2-4756-a769-96a87047f037.jpg)
 
 - 如果你下载工程后没有 Plugin 和一个绿色箭头，那么可以按照图自己配置 `:runIde` 这样就可以运行了。
 
@@ -492,20 +492,20 @@ public class StockImpl implements IStock {
 
 ### 1. 配置股票
 
-![](https://bugstack.cn/images/article/assembly/assembly-211118-3-07.png)
+![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\e701d943-97e4-4801-a4b0-a39e32440f3d.jpg)
 
 - 首先你需要在这里配置你关注的股票代码，我配置了3个我看好的。
 
 ### 2. 自选股指数
 
-![](https://bugstack.cn/images/article/assembly/assembly-211118-3-08.png)
+![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\5489c8b8-1b72-4b0a-8e80-d2b8bbe83313.jpg)
 
 - 配置好以后你就可以看到自己的自选股指数了，选中一条以后，在点击K线。
 - 当你需要看最新数据的时候，可以点左侧的刷新按钮。
 
 ### 3. K线
 
-![](https://bugstack.cn/images/article/assembly/assembly-211118-3-09.png)
+![](res\2021-11-18-《IntelliJ IDEA 插件开发》第三节：开发工具栏和Tab页，展示股票行情和K线.md\e4bfc003-0e96-4820-8fad-dfd00ab75cd2.jpg)
 
 - 现在这个就是对应的 K线，是不是还挺香的。目前是加了最近K线和日K线，你还可以扩展其他维度的图。
 

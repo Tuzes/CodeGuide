@@ -22,7 +22,7 @@ lock: need
 
 今天这个问题主要体现在大家平常用的Mybatis，在插入数据的时候，我们可以把库表索引的返回值通过入参对象返回回来。但是通过我自己手写的Mybatis，每次返回来的都是0，而不是最后插入库表的索引值。*因为是手写的，不是直接使用Mybatis，所以我会从文件的解析、对象的映射、SQL的查询、结果的封装等一直排查下去，但竟然问题都不在这？！*
 
-![](https://bugstack.cn/images/article/spring/source-code-220624-01.png)
+![](res\2022-06-24-为什么insert配置SELECT LAST_INSERT_ID()返回个0呢.md\906d54cb-054d-4500-a922-44c5159e3db7.jpg)
 
 - 就是这个 selectKey 的配置，在执行插入SQL后，开始执行获取最后的索引值。
 - 通常只要配置的没问题，返回对象中也有对应的 id 字段，那么就可以正确的拿到返回值了。PS：问题就出现在这里，小傅哥手写的 Mybatis 竟然只难道返回一个0！
@@ -33,12 +33,12 @@ lock: need
 
 可能大部分研发伙伴没有阅读过 Mybatis 源码，所以可能不太清楚这里发生了什么，小傅哥这里给大家画张图，告诉你发生了什么才让返回的结果为0的。
 
-![](https://bugstack.cn/images/article/spring/source-code-220624-02.png)
+![](res\2022-06-24-为什么insert配置SELECT LAST_INSERT_ID()返回个0呢.md\ad2ccbe9-8c37-42d5-a98a-85989808d8fb.jpg)
 
 - Mybatis 的处理过程可以分为两个大部分来看，一部分是解析，另外一部分是使用。解析的时候把 Mapper XML 中的 insert 标签语句解析出来，同时解析 selectKey 标签。最终解析完成后，把解析的语句信息使用 MappedStatement 映射语句类存放起来。便于后续在 DefaultSqlSession 执行操作的时候，可以从 Configuration 配置项中获取出来使用。
 - 那么这里有一个非常重要的点，就是执行 insert 插入的时候，里面还包含了一句查询的操作。那也就是说，我们会在一次 Insert 中，包含两条执行语句。**重点**：bug就发生在这里，为什么呢？因为最开始这两条语句执行的时候，在获取链接的时候，每一条都是获取一个新的链接，那么也就是说，insert xxx、select LAST_INSERT_ID() 在两个 connection 连接执行时，其实是不对的，没法获取到插入后的索引 ID，只有在一个链接或者一个事务下(一次 commit)才能有事务的特性，获取插入数据后的自增ID。
 - 而因为这部分最开始手写 JdbcTransaction 实现 Transaction 接口获取连接的时候，每一次都是新的链接，代码块如下；
-  ![](https://bugstack.cn/images/article/spring/source-code-220624-03.png)
+  ![](res\2022-06-24-为什么insert配置SELECT LAST_INSERT_ID()返回个0呢.md\1cb247d1-60ce-4d40-964a-f82d80c95143.jpg)
   
 	- 这里的链接获取，最开始没有 if null 的判断，每次都是直接获取链接，所以这种非一个链接下的两条 SQL 操作，所以必然不会获得到正确的结果，相当于只是单独执行 `SELECT LAST_INSERT_ID()` 所以最终的查询结果为 0 了就！*你可以测试把这条语句复制到 SQL查询工具中执行*
 
@@ -69,7 +69,7 @@ public void test_insert() {
 }
 ```
 
-![](https://bugstack.cn/images/article/spring/source-code-220624-05.png)
+![](res\2022-06-24-为什么insert配置SELECT LAST_INSERT_ID()返回个0呢.md\a16e1274-2f90-4e93-9c02-5223dd9f1d98.jpg)
 
 - 这样的测试案例直接使用插件 `sequence Diagram` 生成出来的流程图是有些粗的，只能作为参考，但不能看到内部流程。因为很多流程都被 Mybatis 给封装了，所以这样不能看到细节。
 
@@ -102,7 +102,7 @@ public void test_insert_select() throws IOException {
 }
 ```
 
-![](https://bugstack.cn/images/article/spring/source-code-220624-06.png)
+![](res\2022-06-24-为什么insert配置SELECT LAST_INSERT_ID()返回个0呢.md\04c35d55-e692-47b7-8ab8-ad17b8e1c84c.jpg)
 
 - 当小傅哥把整个 Mybatis 的调用，自己用代码分块调用后，就能看到每一步的细节了。PS：这里是一个小技巧
 - 所以在你测试这部分代码的时候，把这段单元测试添加后，在使用插件 `sequence Diagram` 生成出来的流程图，就能看清楚的看到每一步的处理过程和步骤。PS：因为相当于我们把 SQL 的执行拆解出来了，所以在不被封装的情况下就可以展示全部调用过程。
@@ -112,7 +112,7 @@ public void test_insert_select() throws IOException {
 
 😂 但其实就这么一个链接的问题，在小傅哥手写Spring中也同样遇到过。
 
-![](https://bugstack.cn/images/article/spring/source-code-220624-04.png)
+![](res\2022-06-24-为什么insert配置SELECT LAST_INSERT_ID()返回个0呢.md\e6593a88-ecef-499c-a90c-abb21e4aa1d0.jpg)
 
 在 Spring 中有一部分是关于事务的处理，其实这些事务的操作也是对 JDBC 的包装操作，依赖于数据源获得的链接来管理事务。而我们通常使用 Spring 也是结合着 Mybatis 配置上数据源的方式进行使用，那么在一个事务下操作多个 SQL 语句的时候，是怎么获得同一个链接的呢。*因为从上面👆🏻的案例中，我们得知保证事务的特性，需要在同一个链接下，即使是操作多条SQL*
 
@@ -144,4 +144,4 @@ public void test_insert_select() throws IOException {
 
 **欢迎一起学习手写源码和实战项目！** 适合：有需要校招、面试、晋升，想提高自己的技术深度，为自己的职业生涯续期，可以长稳发展，完善自己的技术体系，奔着高级开发和架构师路线的研发伙伴。
 
-![校招、面试、晋升，加入小傅哥的私有技术朋友圈！](https://bugstack.cn/images/article/about/about-220605-06.png?raw=true)
+![校招、面试、晋升，加入小傅哥的私有技术朋友圈！](res\2022-06-24-为什么insert配置SELECT LAST_INSERT_ID()返回个0呢.md\bae06afb-096b-426a-96e7-000be81f9efd.jpg)

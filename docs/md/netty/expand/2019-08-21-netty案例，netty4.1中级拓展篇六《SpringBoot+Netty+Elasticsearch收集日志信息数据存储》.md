@@ -407,7 +407,7 @@ Waiting forever...
 Started connect web server on http://localhost:9100
 ```
 
-![Elasticsearch-head](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-06-1.png)
+![Elasticsearch-head](res\2019-08-21-netty案例，netty4.1中级拓展篇六《SpringBoot+Netty+Elasticsearch收集日志信息数据存储》.md\b992f996-afb1-464e-aea6-8a2ce237d892.jpg)
 
 >启动StringBoot *Netty服务会随着启动{Application.main}
 
@@ -455,7 +455,7 @@ Started connect web server on http://localhost:9100
 2019-08-10 14:14:55.043  INFO 5976 --- [           main] o.itstack.demo.netty.server.NettyServer  : itstack-demo-netty server start done. {关注公众号：bugstack虫洞栈，获取源码}
 ```
 
-![启动StringBoot](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-06-2.png)
+![启动StringBoot](res\2019-08-21-netty案例，netty4.1中级拓展篇六《SpringBoot+Netty+Elasticsearch收集日志信息数据存储》.md\1bb877e6-67a0-4f24-9b19-d5d4da6a520e.jpg)
 
 >启动Netty客户端发送数据 ApiTest.main
 
@@ -472,6 +472,6 @@ itstack-demo-netty client start done. {关注公众号：bugstack虫洞栈，获
 
 >执行结果 *数据已经写入到Elasticsearch
 
-![启动StringBoot](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-06-3.png)
+![启动StringBoot](res\2019-08-21-netty案例，netty4.1中级拓展篇六《SpringBoot+Netty+Elasticsearch收集日志信息数据存储》.md\b1808ca8-5279-44a7-bb20-28d62ab408d4.jpg)
 
 微信搜索「**bugstack虫洞栈**」公众号，关注后回复「**Netty专题案例**」获取本文源码&更多原创专题案例！

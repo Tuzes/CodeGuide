@@ -30,8 +30,8 @@ lock: need
 
 | 点Star⭐️，收藏仓库，地址(阅读原文也可以)：https://github.com/fuzhengwei/CodeGuide |
 | :----------------------------------------------------------: |
-|      ![](https://bugstack.cn/images/article/about/about-211114-01.png)      |
-|      ![](https://bugstack.cn/images/article/about/about-211114-02.png)      |
+|      ![](res\2021-11-14-CodeGuide开源仓库.md\3e3ade2b-778e-49c0-b970-c5cf1ec8247e.jpg)      |
+|      ![](res\2021-11-14-CodeGuide开源仓库.md\56020ad3-7c39-4627-9a9a-ba1afe3e45f4.jpg)      |
 
 - **仓库**：[https://github.com/fuzhengwei/CodeGuide](https://github.com/fuzhengwei/CodeGuide) - 感谢给仓库点个 Star ⭐️
 - **描述**：开源文章、代码、图稿，到 [CodeGuide](https://github.com/fuzhengwei/CodeGuide) 让更多`同好的技术伙伴`参与到仓库中`内容的贡献上`
@@ -55,8 +55,8 @@ lock: need
 
 | 100+套 的案例仓库，总能给你一些不时之需 |
 | :----------------------------------------------------------: |
-|      ![](https://bugstack.cn/images/article/about/about-211114-03.png)      |
-|      ![](https://bugstack.cn/images/article/about/about-211114-04.png)      |
+|      ![](res\2021-11-14-CodeGuide开源仓库.md\114dbea6-9c1a-463b-a678-13ee48f0e61e.jpg)      |
+|      ![](res\2021-11-14-CodeGuide开源仓库.md\37959007-7cb1-4966-b173-c8f9924d9c6b.jpg)      |
 
 - **地址**：[https://github.com/fuzhengwei](https://github.com/fuzhengwei) - `在首页进入，你会找到我所有的源码案例`
 - **描述**：📚 本代码库是作者小傅哥多年从事一线互联网 Java 开发的学习历程技术汇总，旨在为大家提供一个清晰详细的学习教程，侧重点更倾向编写Java核心内容。如果本仓库能为您提供帮助，请给予支持(关注、点赞、分享)！
@@ -105,7 +105,7 @@ lock: need
 1. 点击项目右上角的 [`New Issue`](https://github.com/fuzhengwei/CodeGuide/issues) 按钮，就可以创建一个新的 `Issue` 了。
 2. 在 `Issue` 中，你需要写清楚自己遇到的问题，例如：你觉得哪里需要改进，或者你觉得还可以添加哪些内容。
 
-![](https://bugstack.cn/images/system/CodeGuide-contribution-guide-01.png)
+![](res\2021-11-14-CodeGuide开源仓库.md\686fa500-d4f7-43cc-9371-116a6dd62ec6.jpg)
 
 例如：一位同学在学习 `CodeGuide` 的过程中，发现面经手册中关于 HashMap 数据迁移描述性问题，于是提出了这个 `Issue`。
 
@@ -129,11 +129,11 @@ lock: need
 
 你在自己 `Fork` 的项目中，点击 `Pull Request`，然后点击 `New Pull Request`
 
-![](https://bugstack.cn/images/system/CodeGuide-contribution-guide-02.png)
+![](res\2021-11-14-CodeGuide开源仓库.md\f20b12bc-4263-4993-85c9-b11eff5e25b9.jpg)
 
 然后,根据提示，创建 `Pull Request` 即可。是不是非常简单?
 
-![](https://bugstack.cn/images/system/CodeGuide-contribution-guide-03.png)
+![](res\2021-11-14-CodeGuide开源仓库.md\ae9c75be-da32-43eb-9107-0c21ffb49b21.jpg)
 
 **另外你还可以直接在阅读文章的时候，直接点击 `在 GitHub 上编辑此页`** 这样也可以在已经 Fork 代码库的前提下，提交 PR，是不是很方便！
 

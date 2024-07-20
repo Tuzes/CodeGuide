@@ -41,7 +41,7 @@ lock: need
 
 |                         01：粗暴合并                         |                         02：数量合并                         |                         03：排序合并                         |                         04：压缩路径                         |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![](https://bugstack.cn/images/article/algorithm/disjoint-set-02.png) | ![](https://bugstack.cn/images/article/algorithm/disjoint-set-03.png) | ![](https://bugstack.cn/images/article/algorithm/disjoint-set-04.png) | ![](https://bugstack.cn/images/article/algorithm/disjoint-set-05.png) |
+| ![](res\2022-10-04-disjoint-set.md\ea16aa54-0543-4173-9a22-0e10bb192ad8.jpg) | ![](res\2022-10-04-disjoint-set.md\35789adc-fed3-4ac8-a5c0-9fa3d06627be.jpg) | ![](res\2022-10-04-disjoint-set.md\a87e77e0-d1c9-4c87-bb53-0c72b7fcfaac.jpg) | ![](res\2022-10-04-disjoint-set.md\ca8c5558-60b9-478d-ab3a-606f7b286adb.jpg) |
 |                     0→6、6→0 不控制合并                      |                      数量少合并到数量多                      |                      排序小合并到排序大                      |                      排序合并时压缩路径                      |
 
 为了尽可能少的检索次数到根元素，在01：粗暴合并的基础上，有了基于数量、排序的合并方式，同时还包括可以压缩路径。这样再索引到根节点的时间复杂度就又降低了。接下来小傅哥就带着大家看看各个场景的在代码中的操作过程。

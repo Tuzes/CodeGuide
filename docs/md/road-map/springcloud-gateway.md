@@ -316,7 +316,7 @@ public RouteLocator route(RouteLocatorBuilder builder, UriConfiguration uriConfi
 
 除了业务开发，小傅哥自己也是非常感兴趣于这样的网关技术组件的实现，所以在日常的工作中也积累了很多网关的设计。后来在22年做了一套轻量的网关系统，把核心的内核逻辑实现出来让大家学习。帮助了很多伙伴学习项目后找到了不错的工作。
 
-![img](https://bugstack.cn/images/article/assembly/api-gateway/api-gateway-220809-02.png)
+![img](res\springcloud-gateway.md\92b62e28-f2ad-417b-8451-e18fbc7968eb.jpg)
 
 整个**API网关**设计核心内容分为这么五块；
 

@@ -20,7 +20,7 @@ lock: need
 
 当我们的微服务达到是几个到百个以上，在更新配置时，不太可能一个个刷新或者重启，这样既不能保证效率也容易导致遗漏造成事故。因此我们需要SpringCloud Bus 提供总线服务，在我们push代码到Git的时候，通过Webhooks（http://localhost:port/actuator/bus-refresh/）执行刷新，消息总线会通知各个实例更新配置，以达到自动更新全服务配置。
 
-![微信公众号：bugstack虫洞栈 & 消息总线配置更新](https://bugstack.cn/assets/images/pic-content/2019/11/springcloud-7-1.png)
+![微信公众号：bugstack虫洞栈 & 消息总线配置更新](res\2019-11-07-Spring Cloud七《基于RabbitMQ消息总线方式刷新配置服务》.md\b8f7bb30-dfb9-4d38-8612-3dd82dbc4809.jpg)
 
 ## 环境准备
 1. jdk 1.8、idea2018、Maven3

@@ -50,7 +50,7 @@ return isPrime;
 
 |                           对称加密                           |                          非对称加密                          |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![](https://bugstack.cn/images/article/algorithm/logic/primality-02.png) | ![](https://bugstack.cn/images/article/algorithm/logic/primality-03.png) |
+| ![](res\2022-11-20-primality.md\c2fb1b6c-7787-41f4-8bdb-cd86e8890db1.jpg) | ![](res\2022-11-20-primality.md\581ac1fb-210f-4eee-8fbd-b7974ad9f8fd.jpg) |
 
 ## 三、算法公式推导
 

@@ -89,6 +89,6 @@ public class NettyServer {
 ## 运行演示
 1、启动server服务端
 2、连接server服务端
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-01-2.jpg)
+![](res\2019-08-01-netty案例，netty4.1基础入门篇一《嗨！NettyServer》.md\10d1b544-8b87-4e76-8d31-3bd217f63139.jpg)
 
 微信搜索「**bugstack虫洞栈**」公众号，关注后回复「**Netty专题案例**」获取本文源码&更多原创专题案例！

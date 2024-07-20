@@ -253,7 +253,7 @@ public class HelloWorld {
 }
 ```      
 
-![字节码生成含有注解的类和方法](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-1-05-1.png)
+![字节码生成含有注解的类和方法](res\2020-04-29-字节码编程，Javassist篇五《使用Bytecode指令码生成含有自定义注解的类和方法》.md\4616b9dd-57d8-48e4-82f6-23fce297b1f3.jpg)
 
 ## 五、总结
 

@@ -175,7 +175,7 @@ public class HashMap02BySeparateChaining<K, V> implements Map<K, V> {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-06.png)
+![](res\2022-08-27-hash-table.md\53cc6dc0-b890-4024-864c-c4fbd70eef89.jpg)
 
 - 因为元素在存放到哈希桶上时，可能发生下标索引膨胀，所以这里我们把每一个元素都设定成一个 Node 节点，这些节点通过 LinkedList 链表关联，当然你也可以通过 Node 节点构建出链表 next 元素即可。
 - 那么这时候在发生元素碰撞，相同位置的元素就都被存放到链表上了，获取的时候需要对存放多个元素的链表进行遍历获取。
@@ -197,7 +197,7 @@ public void test_hashMap02() {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-07.png)
+![](res\2022-08-27-hash-table.md\719c434d-b4aa-4b97-9a08-e0d7bf699827.jpg)
 
 ```java
 07:21:16.654 [main] INFO cn.bugstack.algorithms.test.AlgorithmsTest - 碰撞前 key：01 value：花花
@@ -257,7 +257,7 @@ public class HashMap03ByOpenAddressing<K, V> implements Map<K, V> {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-08.png)
+![](res\2022-08-27-hash-table.md\9892546c-c255-4939-a146-ceabe47ef2df.jpg)
 
 - 开放寻址的设计会对碰撞的元素，寻找哈希桶上新的位置，这个位置从当前碰撞位置开始向后寻找，直到找到空的位置存放。
 - 在 ThreadLocal 的实现中会使用斐波那契散列、索引计算累加、启发式清理、探测式清理等操作，以保证尽可能少的碰撞。
@@ -278,7 +278,7 @@ public void test_hashMap03() {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-09.png)
+![](res\2022-08-27-hash-table.md\99915ab7-99be-4cb9-a6d5-e2db61141dbd.jpg)
 
 ```java
 07:20:22.382 [main] INFO cn.bugstack.algorithms.test.AlgorithmsTest - 碰撞前 key：01 value：花花
@@ -345,7 +345,7 @@ public class HashMap04ByCoalescedHashing<K, V> implements Map<K, V> {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-10.png)
+![](res\2022-08-27-hash-table.md\40b66665-98ca-4bbd-8513-18681bea82b6.jpg)
 
 - 合并散列的最大目的在于将碰撞元素链接起来，避免因为需要寻找碰撞元素所发生的循环遍历。也就是A、B元素存放时发生碰撞，那么在找到A元素的时候可以很快的索引到B元素所在的位置。
 
@@ -404,7 +404,7 @@ private boolean insertEntry(Entry<K, V> e) {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-12.png)
+![](res\2022-08-27-hash-table.md\b9993072-ee8c-42a3-aa07-9551256a3bc6.jpg)
 
 - 当多个键映射到同一个单元格时会发生这种情况。杜鹃散列的基本思想是通过使用两个散列函数而不是仅一个散列函数来解决冲突。
 - 这为每个键在哈希表中提供了两个可能的位置。在该算法的一种常用变体中，哈希表被分成两个大小相等的较小的表，每个哈希函数都为这两个表之一提供索引。两个散列函数也可以为单个表提供索引。
@@ -412,7 +412,7 @@ private boolean insertEntry(Entry<K, V> e) {
 
 **测试**
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-13.png)
+![](res\2022-08-27-hash-table.md\6024a748-b5b3-4dde-bcc8-489bb9453785.jpg)
 
 ```java
 07:52:04.010 [main] INFO cn.bugstack.algorithms.test.AlgorithmsTest - 碰撞前 key：01 value：花花
@@ -454,7 +454,7 @@ public boolean insert(AnyType x) {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-14.png)
+![](res\2022-08-27-hash-table.md\332f0e80-d3dc-4b3e-9313-ae7d243edad8.jpg)
 
 - 该算法使用一个包含n 个桶的数组。对于每个桶，它的邻域是H个连续桶的小集合（即索引接近原始散列桶的那些）。邻域的期望属性是在邻域的桶中找到一个项目的成本接近于在桶本身中找到它的成本（例如，通过使邻域中的桶落在同一缓存行中）。在最坏的情况下，邻域的大小必须足以容纳对数个项目（即它必须容纳 log( n ) 个项目），但平均只能是一个常数。如果某个桶的邻域被填满，则调整表的大小。
 
@@ -472,7 +472,7 @@ public void test_hashMap06() {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-15.png)
+![](res\2022-08-27-hash-table.md\129f4f38-a051-4f0d-8f0e-08af51d7d44e.jpg)
 
 ```java
 17:10:10.363 [main] INFO cn.bugstack.algorithms.test.AlgorithmsTest - 数据结构：HashMap{tab=[null,{"element":1,"hope":"11000000","isActive":true},{"element":9,"hope":"00000000","isActive":true},null,{"element":12,"hope":"10000000","isActive":true},{"element":5,"hope":"10000000","isActive":true},null,null]}
@@ -525,7 +525,7 @@ public void put(K key, V value) {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-16.png)
+![](res\2022-08-27-hash-table.md\2738e550-e1e9-496c-b6df-48494a9bf5e0.jpg)
 
 - 09、12 和 01 发生哈希索引碰撞，进行偏移量计算调整。通过最长位置探测碰撞元素位移来处理。
 
@@ -545,7 +545,7 @@ public void test_hashMap07() {
 }
 ```
 
-![](https://bugstack.cn/images/article/algorithm/algorithms-220824-17.png)
+![](res\2022-08-27-hash-table.md\73ecd3eb-c32a-4ac0-aea7-8b934531071e.jpg)
 
 ```java
 07:34:32.593 [main] INFO cn.bugstack.algorithms.test.AlgorithmsTest - 碰撞前 key：01 value：花花

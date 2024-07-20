@@ -14,7 +14,7 @@ lock: need
 
 `年纪轻轻，为什么要搞中间件开发？`
 
-![](https://bugstack.cn/assets/images/middleware/0-0.jpeg)
+![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\6d80d726-6b66-470c-a83e-04dc72d1a0a4.jpg)
 
 五年前，香河`大厂`村，开张大吉。我和弟兄们雄心壮志，坐公交车去面试，谁知道求职不到半个月，每天平均1.3个人挂在八股文造火箭，一年内6个兄弟去了外包。
 
@@ -48,7 +48,7 @@ lock: need
 
 如果平常只是更多的做一些业务代码的开发，那么接触的技术一般是在各类组件的 API 使用上，以及对不同接口的包装。而中间件开发会涉及到各类框架的源码和原理，以及相应的技术迁移和复用。那么在我们这次中间件的设计和实现中，会学到框架、数据、治理、分布式以及字节码的相关技术栈知识，整体包括如下：
 
-![图 2-1](https://bugstack.cn/assets/images/middleware/2-1.png)
+![图 2-1](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\be239573-cb9e-443e-bbeb-149e37287980.jpg)
 
 - **技术框架**：包括 Spring、SpringBoot 配置加载、自定义注解、扫描注册Bean等，以及 ORM 框架设计原理和实现。这部分技术主要是把开发的中间件与框架结合，开发相应的组件或者包装为各类 SpringBoot Starter 的能力学习。
 - **数据服务**：Mysql、Redis、Elasticsearch，都是数据服务，通常需要开发各类组件对数据服务的使用进行封装，Mysql 我们知道有 JDBC，Redis 我们知道有 Jedis，但 Elasticsearch 有 x-pack 你是否了解。
@@ -63,22 +63,22 @@ lock: need
 
 | 序号 | 图标 | 名称 | 描述 |
 | :--: | :--: | ---- | ---- |
-|  1   | ![](https://bugstack.cn/assets/images/middleware/3-0.png)   |   服务治理，统一白名单控制  |   解决上线验证风险，白名单特定用户开量验证   |
-|  2   |  ![](https://bugstack.cn/assets/images/middleware/4-0.png)  |   服务治理，超时熔断  |  包装超时调用熔断，降低业务系统接入成本    |
-|  3   |  ![](https://bugstack.cn/assets/images/middleware/5-0.png)  |   服务治理，调用限流  |  包装接口调用限流，降低业务系统接入成本    |
-|  4   |  ![](https://bugstack.cn/assets/images/middleware/6-0.png)  |   服务治理，自定义拦截方法  |  不破坏现有方法，增强方法服务能力    |
-|  5   |  ![](https://bugstack.cn/assets/images/middleware/7-0.png)  |   ORM 框架实现  |   学习 ORM 框架核心设计，实现简单版 MyBatis   |
-|  6   |  ![](https://bugstack.cn/assets/images/middleware/8-0.png)  |   ORM 框架与 Spring 集合  |   熟悉 Bean 扫描、代理、注册、管理等，以及对 ORM 的包装   |
-|  7   |  ![](https://bugstack.cn/assets/images/middleware/9-0.png)  |   结合 SpringBoot 开发 ORM Starter  |  ORM、Spring 与 SpringBoot 结合，自动化记载初始配置，开发 Starter    |
-|  8   |  ![](https://bugstack.cn/assets/images/middleware/10-0.png) |   ES-JDBC 查询引擎  |   了解 Elasticsearch JDBC 组件的源码实现，x-pack-jdbc   |
-|  9   |  ![](https://bugstack.cn/assets/images/middleware/11-0.png) |   ES SpringBoot Starter 服务框架  |  运用 ORM 技术迁移，开发 ES 类的 ORM 框架，解决查询映射复杂性，做面向对象开发包装    |
-|  10  | ![](https://bugstack.cn/assets/images/middleware/12-0.png)  |  RPC 框架实现   |   学习 RPC 框架的设计和开发，了解通信原理和实现   |
-|  11  | ![](https://bugstack.cn/assets/images/middleware/13-0.png)  |  数据库路由组件   |  把散列算法、切面处理、数据源切换、自定义配置结合在一起实践，开发路由组件    |
-|  12  | ![](https://bugstack.cn/assets/images/middleware/14-0.png)  |  Redis 简化使用封装   |  处理 Redis 的二次包装，简化为接口代理方式使用，降低应用成本，以及增加升级容易度    |
-|  13  | ![](https://bugstack.cn/assets/images/middleware/15-0.png)  |  分布式任务调度   |  在注册中、任务、控制台，多方内容组合下开发分布式任务调度    |
-|  14  | ![](https://bugstack.cn/assets/images/middleware/16-0.png)  |  非入侵监控设计，ASM 字节码插桩   |   了解字节码插桩技术，学习 Javaagent 处理的非入侵监控方式   |
-|  15  | ![](https://bugstack.cn/assets/images/middleware/17-0.png)  |  非入侵监控设计，JVMTI 定位代码   |   了解 JVMTI 的技术能力，开发 C++ dll 组件，增强监控能力   |
-|  16  | ![](https://bugstack.cn/assets/images/middleware/18-0.png)  |  IDEA插件与字节码插桩结合   |   结合 IDEA 插件开发与字节码增强技术，采集代码研发运行过程中的执行信息，分析和提升交付质量   |
+|  1   | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\d2ceff1e-91f0-4474-88ff-96120b1736cb.jpg)   |   服务治理，统一白名单控制  |   解决上线验证风险，白名单特定用户开量验证   |
+|  2   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\58887065-7d2f-4c9b-87ba-e38591606031.jpg)  |   服务治理，超时熔断  |  包装超时调用熔断，降低业务系统接入成本    |
+|  3   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\f02068c6-ec6d-4362-aeda-f5f36d1ea3d8.jpg)  |   服务治理，调用限流  |  包装接口调用限流，降低业务系统接入成本    |
+|  4   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\934a82e9-e0ca-488a-9cde-3aa372d0b28b.jpg)  |   服务治理，自定义拦截方法  |  不破坏现有方法，增强方法服务能力    |
+|  5   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\3a5e735b-acf9-4406-bfa9-9edf7c3ff1e5.jpg)  |   ORM 框架实现  |   学习 ORM 框架核心设计，实现简单版 MyBatis   |
+|  6   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\4006aae3-8f64-4190-aa5a-a6cbcf8f5c47.jpg)  |   ORM 框架与 Spring 集合  |   熟悉 Bean 扫描、代理、注册、管理等，以及对 ORM 的包装   |
+|  7   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\3b13946b-ba2a-4938-9b7c-6e8684448955.jpg)  |   结合 SpringBoot 开发 ORM Starter  |  ORM、Spring 与 SpringBoot 结合，自动化记载初始配置，开发 Starter    |
+|  8   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\7dd6e508-88e7-454d-ae47-71e21a595b89.jpg) |   ES-JDBC 查询引擎  |   了解 Elasticsearch JDBC 组件的源码实现，x-pack-jdbc   |
+|  9   |  ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\61435fe1-6831-465d-8425-be3f3b258eb2.jpg) |   ES SpringBoot Starter 服务框架  |  运用 ORM 技术迁移，开发 ES 类的 ORM 框架，解决查询映射复杂性，做面向对象开发包装    |
+|  10  | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\7799300a-6373-46a1-a0f2-d9823b9f0b15.jpg)  |  RPC 框架实现   |   学习 RPC 框架的设计和开发，了解通信原理和实现   |
+|  11  | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\0a1b3fb9-5cde-4eb2-bd97-2f72f1c01f1d.jpg)  |  数据库路由组件   |  把散列算法、切面处理、数据源切换、自定义配置结合在一起实践，开发路由组件    |
+|  12  | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\c92ec79f-8a71-4ee4-bb3f-9a34f01abdc3.jpg)  |  Redis 简化使用封装   |  处理 Redis 的二次包装，简化为接口代理方式使用，降低应用成本，以及增加升级容易度    |
+|  13  | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\20ccb8a1-2e73-4d5f-beca-f36a7f019ac3.jpg)  |  分布式任务调度   |  在注册中、任务、控制台，多方内容组合下开发分布式任务调度    |
+|  14  | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\48172f3b-b046-4294-bf99-f9c5b73c8b88.jpg)  |  非入侵监控设计，ASM 字节码插桩   |   了解字节码插桩技术，学习 Javaagent 处理的非入侵监控方式   |
+|  15  | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\da52e62a-0c43-435b-a4c0-4401008a7ae1.jpg)  |  非入侵监控设计，JVMTI 定位代码   |   了解 JVMTI 的技术能力，开发 C++ dll 组件，增强监控能力   |
+|  16  | ![](res\2021-03-31-《SpringBoot 中间件设计和开发》专栏小册上线啦！.md\609feabe-2e33-4c9c-87a6-5f4043f9f5bf.jpg)  |  IDEA插件与字节码插桩结合   |   结合 IDEA 插件开发与字节码增强技术，采集代码研发运行过程中的执行信息，分析和提升交付质量   |
 
 ---
 

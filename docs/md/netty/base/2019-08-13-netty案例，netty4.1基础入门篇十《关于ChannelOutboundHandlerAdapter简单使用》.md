@@ -24,7 +24,7 @@ ChannelOutboundHandlerAdapter与ChannelInboundHandlerAdapter都是继承于Chann
 
 
 #### ** ChannelHandler类图 **
-![ChannelHandler类图](https://bugstack.cn/assets/images/pic-content/2019/08/ChannelHandler类图.png)
+![ChannelHandler类图](res\2019-08-13-netty案例，netty4.1基础入门篇十《关于ChannelOutboundHandlerAdapter简单使用》.md\6d0c8938-5cda-494c-851f-6a86fdc74ba8.jpg)
 
 ## 环境准备
 1. jdk1.8【jdk1.7以下只能部分支持netty】

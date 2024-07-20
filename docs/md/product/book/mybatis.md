@@ -65,7 +65,7 @@ lock: no
 
 这是小傅哥在编写**《手写MyBatis：渐进式源码实践》**图书时，绘制的源码全貌地图。并结合地图的脉络，带着大家逐步实现这里面的功能模块，分章节细化各个模块的实现流程，最终让读者实现出一个丰富、全面、细致的 ORM 框架。
 
-![](https://bugstack.cn/images/article/product/book/mybatis-06.png)
+![](res\mybatis.md\c6ed8964-1daa-4a67-bab9-be67dcc52b5a.jpg)
 
 ---
 

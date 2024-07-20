@@ -17,7 +17,7 @@ lock: need
 
 ## 一、前言
 
-![深夜Diss，一级爱慕](https://bugstack.cn/assets/images/2020/itstack-demo-asm-03-01.png)
+![深夜Diss，一级爱慕](res\2020-04-16-[ASM字节码编程]用字节码增强技术给所有方法加上TryCatch捕获异常并输出.md\54971f4c-22af-47ab-8f00-b8d5c3825999.jpg)
 
 你开发的系统是裸奔的吗？深夜被老板 **Diss**
 
@@ -371,7 +371,7 @@ ASM字节码增强后类输出路径：/User/itstack/git/github.com/WormholePist
 Process finished with exit code 1
 ```                
 
-![ASM字节码增强，演示效果](https://bugstack.cn/assets/images/2020/itstack-demo-asm-03-02.gif)
+![ASM字节码增强，演示效果](res\2020-04-16-[ASM字节码编程]用字节码增强技术给所有方法加上TryCatch捕获异常并输出.md\4bf2862c-0f31-4164-b0e0-5d2ba46e05d3.jpg)
 
 ## 六、总结
 
@@ -387,5 +387,5 @@ Process finished with exit code 1
 
 **链接**：[https://github.com/fuzhengwei/CodeGuide/wiki](https://github.com/fuzhengwei/CodeGuide/wiki)
 
-![CodeGuide Wiki，程序员编码指南](https://bugstack.cn/assets/images/2020/itstack-demo-asm-03-03.png)
+![CodeGuide Wiki，程序员编码指南](res\2020-04-16-[ASM字节码编程]用字节码增强技术给所有方法加上TryCatch捕获异常并输出.md\29b9053d-b9b8-4193-8909-38fb03217a57.jpg)
 

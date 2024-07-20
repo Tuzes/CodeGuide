@@ -17,7 +17,7 @@ lock: need
 
 ## 前言介绍
 在物联网开发中，常常需要通过网页端来控制设备，包括；获取信息、执行操作、启动停止等，就像我们在手机上会控制家里的小米盒子、路由器、电饭煲或者在线养狗等一些设备一样。在这里所有的下层设备都可以通过socket通信链接到服务端，而用户一端在通过http链接或者websocket链接到服务端，通过发送和接收数据来做出相应的行为操作。如下图；
-![微信公众号：bugstack虫洞栈 & 执行流程](https://bugstack.cn/assets/images/pic-content/2019/09/netty-3-01.png)
+![微信公众号：bugstack虫洞栈 & 执行流程](res\2019-12-01-websocket与下位机通过netty方式通信传输行为信息.md\288f2a9e-e6a5-4d2e-bc48-0f05203e7e53.jpg)
 
 ## 案例目标
 1. 本章节整合Springboot+Netty，通过部署nettySocket与webSocket两套服务端，来接收转发行为消息。
@@ -318,7 +318,7 @@ socket = new WebSocket("ws://localhost:7398/websocket");
    1. Application.java，Plugins/spring-boot/spring-boot:run
    2. ApiTest.java，右键启动模拟下位机
 2. 打开服务端链接；http://localhost:8080/ http://localhost:8080/arkWs/arkWsControlCenter.html
-   ![微信公众号：bugstack虫洞栈 & 服务端与监控](https://bugstack.cn/assets/images/pic-content/2019/09/netty-3-02.png)
+   ![微信公众号：bugstack虫洞栈 & 服务端与监控](res\2019-12-01-websocket与下位机通过netty方式通信传输行为信息.md\ed994932-588c-4e86-b16a-e96b332e7f73.jpg)
 3. 发送模拟信息，观察执行结果；
    ```java
     2019-12-01 15:11:49.965  INFO 7620 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'

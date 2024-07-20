@@ -20,7 +20,7 @@ lock: need
 一个知识点的学习过程基本分为；运行helloworld、熟练使用api、源码分析、核心专家。在分析mybaits以及mybatis-spring源码之前，我也只是简单的使用，因为它好用。但是他是怎么做的多半是凭自己的经验去分析，但始终觉得这样的感觉缺少点什么，在几次夙兴夜寐，靡有朝矣之后决定彻底的研究一下，之后在去仿照着写一版核心功能。依次来补全自己的技术栈的空缺。在现在技术知识像爆炸一样迸发，而我们多半又忙于工作业务开发。就像一个不会修车的老司机，只能一脚油门，一脚刹车的奔波。车速很快，但经不起坏，累觉不爱。好！为了解决这样问题，也为了钱程似锦（形容钱多的想家里的棉布一样），努力！
 
 开动之前先庆祝下我的iPhone4s又活了，还是那么好用(嗯！有点卡)；
-![](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-mybatis-2-1.jpg)
+![](res\2020-01-20-[源码分析]手写mybait-spring核心功能，干货好文一次学会工厂bean、类代理、bean注册的使用.md\8669aaaa-04a4-40a8-abf1-14fcfc65f960.jpg)
 
 ## 二、以往章节
 
@@ -237,7 +237,7 @@ Process finished with exit code 0
 
 如下图，通过mybatis使用的配置，我们可以看到数据源DataSource交给SqlSessionFactoryBean，SqlSessionFactoryBean实例化出的SqlSessionFactory，再交给MapperScannerConfigurer。而我们要实现的就是MapperScannerConfigurer这部分；
 
-![](https://bugstack.cn/assets/images/pic-content/2019/11/itstack-demo-code-mybatis-2-2.png)
+![](res\2020-01-20-[源码分析]手写mybait-spring核心功能，干货好文一次学会工厂bean、类代理、bean注册的使用.md\19b71768-300e-4fb4-8a3e-b681a6dfb576.jpg)
 
 ### 1. 需要实现哪些核心类
 

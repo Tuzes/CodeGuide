@@ -156,11 +156,11 @@ public class NettyServer {
 ## 测试结果
 >启动服务端NettyServer
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty04-1.png)
+![](res\2019-08-07-netty案例，netty4.1基础入门篇四《NettyServer收发数据》.md\ae2fdc76-98e0-4f74-b370-a3195abb3016.jpg)
 
 >启动模拟器NetAssist 发送数据测试
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty04-2.png)
+![](res\2019-08-07-netty案例，netty4.1基础入门篇四《NettyServer收发数据》.md\197dc227-66d3-4dda-8352-ff5931844da4.jpg)
 
 >执行结果
 

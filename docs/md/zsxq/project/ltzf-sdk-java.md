@@ -95,4 +95,4 @@ lock: no
 
 **在今年的面试中，星球帮助众多伙伴拿到**`微信支付`、`京东科技`、`度小满`、`蚂蚁金服`、`Lazada（电商优惠营销）`、`快手`、`美团到店`等Offer，还有的校招生薪资最高年包到45w！
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/zTfAIs5rNXglxK5zQqzss9tq3P2Ss5mV3WX8dZ9m7fBLdhSXpFoKOE0kPaLpsybK1icOTRdL5VXEia7iaoPZ1CenQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](res\ltzf-sdk-java.md\3dc909ca-6628-460b-b686-c21126a5323d.jpg)

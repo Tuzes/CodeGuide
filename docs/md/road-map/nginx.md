@@ -28,7 +28,7 @@ docker run \
 nginx
 ```
 
-![](https://bugstack.cn/images/article/devops/dev-ops-nginx-230418-01.png)
+![](res\nginx.md\09fa8c1c-2dbb-4df2-827b-c8657fd36148.jpg)
 
 - restart 重启策略，always 是一直保持重启。如果不设置，可以把这条删掉。`never\always`
 - `8090` - 容器端口、`80` - 服务器端口，这样外部通过80端口即可访问。
@@ -134,7 +134,7 @@ SSL 免费的证书，一种是 [freessl - 支持自动续期](https://bugstack.
 
 阿里云免费域名证书：[https://yundun.console.aliyun.com/?p=cas#/certExtend/free/cn-hangzhou](https://yundun.console.aliyun.com/?p=cas#/certExtend/free/cn-hangzhou)
 
-![](https://bugstack.cn/images/article/devops/dev-ops-nginx-230418-02.png)
+![](res\nginx.md\4296424f-40d2-4fdb-a622-9ac2811f196e.jpg)
 
 - 步骤1；通过免费的方式创建 SSL，之后通过引导的 DNS 方式进行验证。其实就是在你的域名里配置下验证信息。
 - 步骤2；申请后，3-5分钟左右 DNS 会验证通过，这个时候你直接下载 Nginx 的 SSL 包即可。里面有2个文件【x.key、x.pem】
@@ -268,7 +268,7 @@ server {
 
 你可以通过 `SFTP` 工具或者 `mkdir -p`、`touch` 命令创建一些服务器本地用于映射的文件夹和文件，这里小傅哥使用了 [Termius](https://www.termius.com/) 工具进行创建操作。
 
-![](https://bugstack.cn/images/article/devops/dev-ops-nginx-230418-03.png)
+![](res\nginx.md\0cde8bd5-1fc9-421a-8b47-d8111d5cffe5.jpg)
 
 - 文件1；html 
 - 文件2；ssl - 把本地的 ssh 文件上传进来
@@ -291,7 +291,7 @@ docker run \
 --privileged=true -d --restart=always nginx
 ```
 
-![](https://bugstack.cn/images/article/devops/dev-ops-nginx-230418-04.png)
+![](res\nginx.md\9ac3a141-bc85-4068-b1cc-10b49b698cec.jpg)
 
 ## 五、OpenAI 访问
 

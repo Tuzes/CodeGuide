@@ -19,7 +19,7 @@ lock: need
 
 ### 1. 先祝贺下自己拿下3.8万本下载量！
 
-![](https://bugstack.cn/assets/images/2020/interview/interview-all-0-01.png)
+![](res\2020-10-04-《Java面经手册》PDF数据结构篇， 肝完出炉了！来吧，这本书帮你拿最贵的offer！.md\be3c48e0-8477-41e1-8404-7fcb0a4de5ac.jpg)
 
 [《重学Java设计模式》](https://bugstack.cn/itstack-demo-design/2020/07/12/%E9%87%8D%E5%AD%A6-Java-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html)PDF，我的第二本电子书，截止目前为止全网下载量3.8万本。这是一本以实战真实场景编码的方式学习设计模式，全书涉及交易、营销、下单、秒杀、规则引擎以及中间件等22个真实场景，共计18万字271页，耗时50天肝完！*文末提供下载指引*
 
@@ -29,7 +29,7 @@ lock: need
 
 **10月4日**，终于从医院🏥驱车250公里从张家口回来了！在医院陪床真心不容易，还好不是麻烦的病，只是做一个腰间盘里的微创。`哈哈哈，什么都还好，只是好几天没洗澡了，睡觉也没脱衣服。` 在医院基本除了简单的看护外，基本都是闲呆。但闲不住的我终于还是把电脑打开了，就像下面这样！
 
-![小傅哥 & 医院陪床敲代码](https://bugstack.cn/assets/images/2020/interview/interview-all-0-02.png)
+![小傅哥 & 医院陪床敲代码](res\2020-10-04-《Java面经手册》PDF数据结构篇， 肝完出炉了！来吧，这本书帮你拿最贵的offer！.md\982ab749-631d-4593-a7b8-b5ed8f2d3d24.jpg)
 
 ### 3. 为Java面经又肝出一本PDF！
 
@@ -37,7 +37,7 @@ lock: need
 
 ## 二、简介
 
-![](https://bugstack.cn/assets/images/2020/interview/interview-all-0-03.png)
+![](res\2020-10-04-《Java面经手册》PDF数据结构篇， 肝完出炉了！来吧，这本书帮你拿最贵的offer！.md\7279f174-280b-4d5c-a126-dd6ef2df7f50.jpg)
 
 **Hello，world of java！** 你好，java编码的世界！
 
@@ -94,7 +94,7 @@ lock: need
 
 **我写了三本PDF书，你都可以关注公众号：`bugstack虫洞栈` 回复口令，进行下载！**
 
-![](https://bugstack.cn/assets/images/qrcode.png)
+![](res\2020-10-04-《Java面经手册》PDF数据结构篇， 肝完出炉了！来吧，这本书帮你拿最贵的offer！.md\432b3db9-6c4d-4951-9512-049ad46842c2.jpg)
 
 1. **《Java 面经手册》**，公众号内回复：`面经手册`，获取下载链接。
 2. **《重学Java设计模式》**，公众号内回复：`设计模式`，获取下载链接。

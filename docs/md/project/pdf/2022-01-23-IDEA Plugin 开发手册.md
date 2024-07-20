@@ -20,7 +20,7 @@ lock: need
 
 所以🌶，又一套**成系列体系**的`《IDEA Plugin 开发手册》`内容已经为有需要的你准备好啦：
 
-![](https://bugstack.cn/images/article/knowledge/knowledge-220123-01.png)
+![](res\2022-01-23-IDEA Plugin 开发手册.md\e80e8f51-63f8-4394-93e3-b3014aa0d5f0.jpg)
 
 - 此开发手册，分为4章12节循序渐进的通过实践案例开发的方式，串联 IDEA Plugin 开发的各项常用技术点，为读者讲解如何开发一个 IDEA 插件。
 - 基本开发类知识点包括：`gradle 工程创建`、`插件发布`、`Swing UI`、`各类窗体`、`菜单配置`、`工程上下文对象`、`向导步骤`、`内容存放`、`配置加载`等，通过这些知识在案例中的逐个使用，而学习如何开发插件。
@@ -31,13 +31,13 @@ lock: need
 
 `vo2dto，一个已经被下载1000+的插件`
 
-![](https://bugstack.cn/images/article/knowledge/knowledge-220123-02.png)
+![](res\2022-01-23-IDEA Plugin 开发手册.md\a3ad6a99-2836-4b46-b0d6-a03529bc6569.jpg)
 
 这是小傅哥开发的一款用于帮助使用 IDEA 编写代码的研发人员，快速生成两个对象转换过程中所需要大量的 `x.set(y.get)` 代码块的 vo2dto 插件工具。*可以直接在 IDEA 中搜索安装使用*
 
 | `对vo2dto感兴趣的，程序员👨🏻‍💻‍，来自这些国家` |
 |:---:|
-| ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-03.png) |
+| ![](res\2022-01-23-IDEA Plugin 开发手册.md\06b99020-c8cb-4221-be5b-25de87bdb739.jpg) |
 
 - 插件：[https://plugins.jetbrains.com/plugin/18262-vo2dto](https://plugins.jetbrains.com/plugin/18262-vo2dto)
 - 源码：[https://github.com/fuzhengwei/vo2dto](https://github.com/fuzhengwei/vo2dto)
@@ -45,7 +45,7 @@ lock: need
 
 ## 三、别说了，上干货吧！
 
-![](https://bugstack.cn/images/article/knowledge/knowledge-220123-04.png)
+![](res\2022-01-23-IDEA Plugin 开发手册.md\e8fbd3b1-5935-437d-94cc-de51f568286f.jpg)
 
 **Hello, world of idea plugin ！**  你好，IDEA 插件的世界！欢迎来到这里，很高兴你能拿到这本书！
 
@@ -93,7 +93,7 @@ IDEA 插件开发可以帮助研发人员提升能效，解决一些实际场景
 
 |                              春                              |                              夏                              |                              秋                              |                              冬                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-05.png) | ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-06.png) | ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-07.png) | ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-08.png) |
+| ![](res\2022-01-23-IDEA Plugin 开发手册.md\73de6a04-48e4-4e4e-80a2-53d46facf6aa.jpg) | ![](res\2022-01-23-IDEA Plugin 开发手册.md\0506a41f-a10c-4763-8180-d5ccbf167b28.jpg) | ![](res\2022-01-23-IDEA Plugin 开发手册.md\efe50c26-db6f-412e-a09b-2987e5f06439.jpg) | ![](res\2022-01-23-IDEA Plugin 开发手册.md\e10aed16-9ef4-47f3-bbf0-77ef50d60913.jpg) |
 
 这是过年前的最后一本 PDF 收尾之作的发布了，这一年在内容输出上包括了：[`《SpringBoot 中间件的设计和开发》`](https://bugstack.cn/md/project/springboot-middleware/2021-03-31-%E3%80%8ASpringBoot%20%E4%B8%AD%E9%97%B4%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%BC%80%E5%8F%91%E3%80%8B%E4%B8%93%E6%A0%8F%E5%B0%8F%E5%86%8C%E4%B8%8A%E7%BA%BF%E5%95%A6%EF%BC%81.html)、[`《重学Java设计模式》`出版图书](https://mp.weixin.qq.com/s/g9LYQEqzOeiYOpfG_5XFYg)、[`《手撸 Spring》`](https://mp.weixin.qq.com/s/kYio8zIG5UL-To3SV-uRmA)、[`《Lottery 抽奖系统 - 基于领域驱动设计的四层架构实践》`](https://bugstack.cn/md/project/lottery/introduce/Lottery%E6%8A%BD%E5%A5%96%E7%B3%BB%E7%BB%9F.html)、[`《IDEA Plugin 开发手册》`](https://download.csdn.net/download/Yao__Shun__Yu/77484299)，哈哈哈，是不是就挺肝的！当一个原创做作者有了粉丝的正向反馈、有了平台的扶持、有了一些收益，就可以非常好的在喜欢的领域上不断的耕作。
 

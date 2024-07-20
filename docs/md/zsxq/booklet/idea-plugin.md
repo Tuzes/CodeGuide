@@ -42,7 +42,7 @@ lock: no
 
 | `对vo2dto感兴趣的，程序员👨🏻‍💻‍，来自这些国家` |
 |:---:|
-| ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-03.png) |
+| ![](res\idea-plugin.md\bff11583-4526-4055-99c4-b6bdd57c07b8.jpg) |
 
 - 插件：[https://plugins.jetbrains.com/plugin/18262-vo2dto](https://plugins.jetbrains.com/plugin/18262-vo2dto)
 - 源码：[https://github.com/fuzhengwei/vo2dto](https://github.com/fuzhengwei/vo2dto)
@@ -98,7 +98,7 @@ IDEA 插件开发可以帮助研发人员提升能效，解决一些实际场景
 
 |                              春                              |                              夏                              |                              秋                              |                              冬                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-05.png) | ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-06.png) | ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-07.png) | ![](https://bugstack.cn/images/article/knowledge/knowledge-220123-08.png) |
+| ![](res\idea-plugin.md\503cdf55-dc9b-442d-8b1c-c725edc03449.jpg) | ![](res\idea-plugin.md\1880d2e8-dd83-45c9-ae6d-46d9f1291468.jpg) | ![](res\idea-plugin.md\787e9889-6617-4036-bc5c-9816721be470.jpg) | ![](res\idea-plugin.md\c0073b54-fcbb-4dc7-84be-e4c640b5715f.jpg) |
 
 这是过年前的2021年最后一本 PDF 收尾之作的发布了，这一年在内容输出上包括了：[`《SpringBoot 中间件的设计和开发》`](https://bugstack.cn/md/project/springboot-middleware/2021-03-31-%E3%80%8ASpringBoot%20%E4%B8%AD%E9%97%B4%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%BC%80%E5%8F%91%E3%80%8B%E4%B8%93%E6%A0%8F%E5%B0%8F%E5%86%8C%E4%B8%8A%E7%BA%BF%E5%95%A6%EF%BC%81.html)、[`《重学Java设计模式》`出版图书](https://mp.weixin.qq.com/s/g9LYQEqzOeiYOpfG_5XFYg)、[`《手撸 Spring》`](https://mp.weixin.qq.com/s/kYio8zIG5UL-To3SV-uRmA)、[`《Lottery 抽奖系统 - 基于领域驱动设计的四层架构实践》`](https://bugstack.cn/md/project/lottery/introduce/Lottery%E6%8A%BD%E5%A5%96%E7%B3%BB%E7%BB%9F.html)、[`《IDEA Plugin 开发手册》`](https://download.csdn.net/download/Yao__Shun__Yu/77484299)，哈哈哈，是不是就挺肝的！当一个原创做作者有了粉丝的正向反馈、有了平台的扶持、有了一些收益，就可以非常好的在喜欢的领域上不断的耕作。
 

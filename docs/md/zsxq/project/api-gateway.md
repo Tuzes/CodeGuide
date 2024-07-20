@@ -34,7 +34,7 @@ lock: no
 
 那么以往没有网关的时候怎么做，基本的做法就是再 RPC 服务之上再开发一个对应的 WEB 服务，这些 WEB 服务可以是 Spring MVC 工程，在 Spring MVC 工程中调用 RPC 服务，最终提供 HTTP 接口给到 H5、Web、小程序、APP 等应用中进行使用。如图 1-1 所示
 
-![图 1-1 从传统方式到网关设计](https://bugstack.cn/images/article/assembly/api-gateway/api-gateway-220809-01.png)
+![图 1-1 从传统方式到网关设计](res\api-gateway.md\e680438e-9dac-4dd1-8dda-3fd1e9a9f17e.jpg)
 
 传统开发 WEB 服务的几个问题：
 - 问题1：每一个 WEB 应用，都需要与之匹配申请一套工程、域名、机器等资源，一直到部署，研发效率降低，维护成本增加。
@@ -55,7 +55,7 @@ lock: no
 
 诸如此类的软件架构设计，都会在这套网关微服务架构中体现，整体架构如图 1-2 所示
 
-![图 1-2 网关架构设计](https://bugstack.cn/images/article/assembly/api-gateway/api-gateway-220809-02.png)
+![图 1-2 网关架构设计](res\api-gateway.md\63186ef2-08cb-4515-a37a-d2c0ee43e8d2.jpg)
 
 整个**API网关**设计核心内容分为这么五块；
 - `第一块`：是关于通信的协议处理，也是网关最本质的处理内容。这里需要借助 NIO 框架 Netty 处理 HTTP 请求，并进行协议转换泛化调用到 RPC 服务返回数据信息。
@@ -80,7 +80,7 @@ lock: no
 
 趁着周末假期小傅哥已经做了一部分的功能实现，就像小傅哥以前[《手写Spring》](https://bugstack.cn/md/spring/develop-mybatis/2022-03-20-%E7%AC%AC1%E7%AB%A0%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%EF%BC%8C%E6%89%8B%E5%86%99Mybatis%E8%83%BD%E7%BB%99%E4%BD%A0%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%EF%BC%9F.html)、[《手写Mybatis》](https://bugstack.cn/md/spring/develop-spring/2021-05-16-%E7%AC%AC1%E7%AB%A0%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%EF%BC%8C%E6%89%8B%E5%86%99Spring%E8%83%BD%E7%BB%99%E4%BD%A0%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%EF%BC%9F.html)一样，此项目也是渐进式的逐步完成各个模块功能的开发。并参照优秀源码级的项目架构设计，运用抽象和分治的设计技巧，解决功能间的耦合调用和服务设计。同时也结合设计原则和相应场景下的设计模式，开发出高质量易于迭代和维护的代码。部分代码实现和运行如图 1-3 所示
 
-![图 1-3 网关运行效果](https://bugstack.cn/images/article/assembly/api-gateway/api-gateway-220809-03.png)
+![图 1-3 网关运行效果](res\api-gateway.md\ecae2c68-4a09-4696-b627-d6bb415448b0.jpg)
 
 - 左侧是API网关核心通信模块，右侧是RPC(Dubbo)服务。通过对网页端发起的 http 请求，经过API网关的协议转换和对RPC的泛化调用包装结果数据并返回到页面，就是中间这张图的运行效果了。
 - 左侧工程的实现，以渐进式分拆模块逐步完成，例如： core-01(Netty通信)、core-02(泛化调用)、core-03(执行器)等，让每一个对API网关感兴趣的读者都能从中学习到；架构的分层、功能的设计、代码的实现。
@@ -112,7 +112,7 @@ lock: no
 **目录：**
 
 - [x] [第1章：HTTP请求会话协议处理](https://bugstack.cn/md/assembly/api-gateway/2022-08-13-%E7%AC%AC1%E7%AB%A0%EF%BC%9AHTTP%E8%AF%B7%E6%B1%82%E4%BC%9A%E8%AF%9D%E5%8D%8F%E8%AE%AE%E5%A4%84%E7%90%86.html)
-    ![](https://bugstack.cn/images/article/assembly/api-gateway/api-gateway-220809-07.png)
+    ![](res\api-gateway.md\5b2a50ff-ff1a-4668-b2cf-53a5fc728d65.jpg)
 - [x] [第2章：代理RPC泛化调用](https://bugstack.cn/md/assembly/api-gateway/2022-08-20-%E7%AC%AC2%E7%AB%A0%EF%BC%9A%E4%BB%A3%E7%90%86RPC%E6%B3%9B%E5%8C%96%E8%B0%83%E7%94%A8.html)
 - [x] [第3章：分治处理会话流程](https://bugstack.cn/md/assembly/api-gateway/2022-08-27-%E7%AC%AC3%E7%AB%A0%EF%BC%9A%E5%88%86%E6%B2%BB%E5%A4%84%E7%90%86%E4%BC%9A%E8%AF%9D%E6%B5%81%E7%A8%8B.html)
 - [ ] [第4章：方法执行器封装](#)

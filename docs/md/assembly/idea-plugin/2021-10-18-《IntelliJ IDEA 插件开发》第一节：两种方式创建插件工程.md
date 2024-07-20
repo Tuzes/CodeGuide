@@ -43,7 +43,7 @@ lock: need
 
 **New -> Project -> IntelliJ Platform Plugin**
 
-![](https://bugstack.cn/assets/images/middleware/guide-idea-plugin-1-01.png)
+![](res\2021-10-18-《IntelliJ IDEA 插件开发》第一节：两种方式创建插件工程.md\52c977c1-9b83-45c5-8dd4-ead76b9ca6f3.jpg)
 
 ### 2. 工程结构
 
@@ -114,7 +114,7 @@ guide-idea-plugin-create-project-by-platform
 
 ### 4. MyAction 事件入口
 
-![](https://bugstack.cn/assets/images/middleware/guide-idea-plugin-1-04.png)
+![](res\2021-10-18-《IntelliJ IDEA 插件开发》第一节：两种方式创建插件工程.md\63988c67-ab6b-49f5-9a10-fb7353183ac5.jpg)
 
 ```java
 public class MyAction extends AnAction {
@@ -144,7 +144,7 @@ public class MyAction extends AnAction {
 
 **运行结果**
 
-![](https://bugstack.cn/assets/images/middleware/guide-idea-plugin-1-04.png)
+![](res\2021-10-18-《IntelliJ IDEA 插件开发》第一节：两种方式创建插件工程.md\63988c67-ab6b-49f5-9a10-fb7353183ac5.jpg)
 
 - 通过测试运行效果可以看到，已经可以打出工程下类的路径信息了。*你也可以尝试把Action的入口放到其他按钮下进行测试*
 
@@ -154,7 +154,7 @@ public class MyAction extends AnAction {
 
 **New -> Project -> Gradle 选中 Java & IntelliJ Platform Plugin**
 
-![](https://bugstack.cn/assets/images/middleware/guide-idea-plugin-1-03.png)
+![](res\2021-10-18-《IntelliJ IDEA 插件开发》第一节：两种方式创建插件工程.md\436af69f-a66f-4832-8ea1-9c37d4dd0657.jpg)
 
 ### 2. 工程结构
 
@@ -243,7 +243,7 @@ public class MyAction extends AnAction {
 
 **运行结果**
 
-![](https://bugstack.cn/assets/images/middleware/guide-idea-plugin-1-05.png)
+![](res\2021-10-18-《IntelliJ IDEA 插件开发》第一节：两种方式创建插件工程.md\e0bb2ddb-ad63-4aaa-82d8-efcdf4178ca0.jpg)
 
 - 通过测试运行效果可以看到，已经可以打出工程下类的路径信息了。
 

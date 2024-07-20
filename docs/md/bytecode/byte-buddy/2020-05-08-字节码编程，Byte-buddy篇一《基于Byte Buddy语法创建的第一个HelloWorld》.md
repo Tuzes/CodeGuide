@@ -243,7 +243,7 @@ Process finished with exit code 0
 
 **效果图**
 
-![Byte buddy HelloWorld 效果图](https://bugstack.cn/assets/images/2020/itstack-demo-bytecode-2-01-1.png)
+![Byte buddy HelloWorld 效果图](res\2020-05-08-字节码编程，Byte-buddy篇一《基于Byte Buddy语法创建的第一个HelloWorld》.md\044bf492-e415-4aa6-a8a9-47937402aa08.jpg)
 
 ## 六、总结
 

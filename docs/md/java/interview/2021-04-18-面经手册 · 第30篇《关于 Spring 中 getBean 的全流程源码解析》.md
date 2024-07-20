@@ -68,7 +68,7 @@ lock: need
 
 ### 1. getBean 核心流程图
 
-![小傅哥，getBean 核心流程图](https://bugstack.cn/assets/images/2020/interview/interview-30-1.png)
+![小傅哥，getBean 核心流程图](res\2021-04-18-面经手册 · 第30篇《关于 Spring 中 getBean 的全流程源码解析》.md\10e42fb3-c794-4ea1-818e-71b11733183f.jpg)
 
 - 整张图就是 getBean 过程中涉及到的类和核心流程用到的方法以及操作的内容。如果你能把整张图全理解了，那么基本也就看懂了 getBean 的全过程。
 - 本张图可能会因为网络压缩变得不清晰，可以通过**关注公众号**：[bugstack虫洞栈](https://bugstack.cn/assets/images/qrcode.png)，回复：`图稿`，获取。
@@ -598,7 +598,7 @@ public void test_alias() {
 
 ---
 
-![](https://bugstack.cn/assets/images/2020/interview/interview-30-2.png)
+![](res\2021-04-18-面经手册 · 第30篇《关于 Spring 中 getBean 的全流程源码解析》.md\5ca7d2f9-73b0-4aa7-b657-d362b42c3c14.jpg)
 
 - 在单元测试 getBean 的时候，会看到它会把别名逐步处理掉，最终获取到原有的 BeanName
 
@@ -620,7 +620,7 @@ public void test_depends_on() {
 
 ---
 
-![](https://bugstack.cn/assets/images/2020/interview/interview-30-3.png)
+![](res\2021-04-18-面经手册 · 第30篇《关于 Spring 中 getBean 的全流程源码解析》.md\2154aae6-dbe8-48ba-bea6-bc5e5d842c5d.jpg)
 
 - 涉及到依赖会走到 dependsOn != null 下，获取到依赖的 Bean 实例。
 
@@ -641,7 +641,7 @@ public void test_factory_bean() {
 
 ---
 
-![](https://bugstack.cn/assets/images/2020/interview/interview-30-4.png)
+![](res\2021-04-18-面经手册 · 第30篇《关于 Spring 中 getBean 的全流程源码解析》.md\61a79c9e-dfae-4cac-876f-2a0177a3475b.jpg)
 
 - 实现 FactoryBean 的类会需要实现 getObject 方法，所有此类的 Bean 最终都是获取 getObject
 

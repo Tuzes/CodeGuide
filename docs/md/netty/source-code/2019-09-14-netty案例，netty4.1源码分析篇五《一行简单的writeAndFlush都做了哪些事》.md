@@ -205,7 +205,7 @@ public final void write(Object msg, ChannelPromise promise) {
 
 **https://github.com/netty/netty/issues/2362**
 
-![](https://bugstack.cn/assets/images/pic-content/2019/09/netty4-1.png)
+![](res\2019-09-14-netty案例，netty4.1源码分析篇五《一行简单的writeAndFlush都做了哪些事》.md\afb94430-ebce-42cd-b407-b1e1eb037775.jpg)
 
 - 获取该NioSocketChannel的ChannelOutboundBuffer成员属性。（确切地来说ChannelOutboundBuffer是NioSocketChannelUnsafe对象中的成员属性，而NioSocketChannelUnsafe才是NioSocketChannel的成员属性。）每一个NioSocketChannel会维护一个它们自己的ChannelOutboundBuffer，用于存储待出站写请求。
 判断该outboundBuffer是否为null，如果为null则说明该NioSocketChannel已经关闭了，那么就会标志该异步写操作为失败完成，并释放写消息后返回。

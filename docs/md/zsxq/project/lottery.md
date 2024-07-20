@@ -40,7 +40,7 @@ lock: no
 
 |  项目学习意见（收集结果）    |
 | ---- |
-|   ![图 1-1](https://bugstack.cn/images/article/project/lottery/Part-2/1-01.png)   |
+|   ![图 1-1](res\lottery.md\663c7454-06d7-41ae-a47e-61d978735d21.jpg)   |
 
 - [项目学习意见（收集结果）.xlsx](https://gitcode.net/KnowledgePlanet/Lottery/-/blob/master/doc/assets/excel/%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0%E6%84%8F%E8%A7%81%EF%BC%88%E6%94%B6%E9%9B%86%E7%BB%93%E6%9E%9C%EF%BC%89.xlsx)
 
@@ -50,7 +50,7 @@ So！基于DDD领域驱动设计的四层架构**抽奖系统**，开始啦！�
 
 ## 二、呀，能学东西！
 
-![图 1-2](https://bugstack.cn/images/article/project/lottery/Part-2/1-02.png)
+![图 1-2](res\lottery.md\1b3b106d-d740-4f82-b624-a3da9e55724f.jpg)
 
 一个以真实场景`实践技术栈整合`开发实际需求的项目，势必会因为要完成需求而引入各项技术栈的使用，也会由于要解决互联网中C端场景中的三高问题，而使用相应的技术实现不同类别解决与方案，我们也可以把此类解决方案理解为DDD中的业务领域模型开发。在这个设计和开发的过程中会涉及到`架构设计`、`技术应用`、`场景实现`，每一块内容都会有非常多的实践知识，可以让读者学到东西。
 
@@ -58,7 +58,7 @@ So！基于DDD领域驱动设计的四层架构**抽奖系统**，开始啦！�
 
 在此项目中你会学习到互联网公司关于C端项目开发时候用到的一些，技术、架构、规范等内容。由于项目为实战类编程项目，在学习的过程中需要上手操作，小傅哥会把系统的搭建拉不同的分支列为每一个章节进行设计和实现并记录到开发日记中，读者在学习的过程中可以结合这部分内容边看文章边写代码实践。
 
-![](https://bugstack.cn/images/article/about/about-220207-01.png)
+![](res\lottery.md\6671f704-c87c-4557-9a3a-f6b4834bdf7d.jpg)
 
 - 技术：JDK 1.8、SpringBoot、Mybatis、Dubbo、MQ、Redis、Mysql、ELK、分库分表、Otter、vue、微信公众号、Docker
 - 架构：DDD 领域驱动设计、充血模型、设计模式
@@ -66,13 +66,13 @@ So！基于DDD领域驱动设计的四层架构**抽奖系统**，开始啦！�
 
 **其他所需环境如下(mysql\kafka\zk\redis\xxl-job)：**
 
-![](https://bugstack.cn/images/article/project/lottery/introduce/portainer.png)
+![](res\lottery.md\939362c9-d5d2-46d2-8c34-98b25e0f4f27.jpg)
 
 - 不只是 DDD 分布式项目开发，你还可以学习到关于 Docker 的实践使用
 
 ### 2. 系统架构
 
-![](https://bugstack.cn/images/article/project/lottery/introduce/introduce-220101-01.png)
+![](res\lottery.md\dfb66446-dc30-4ad5-a0af-e31844540f9f.jpg)
 
 - 此系统架构为 DDD 领域驱动设计的四层架构实现方式，以重视代码实现落地的方式向读者介绍和展示如何开发这样的代码。
 - 在 Domain 领域层逐步通过拆解系统流程设计，按照职责边界的领域模块进行设计和开发，最终在应用层进行逻辑功能编排。
@@ -80,7 +80,7 @@ So！基于DDD领域驱动设计的四层架构**抽奖系统**，开始啦！�
 
 ### 3. 分布式设计
 
-![](https://bugstack.cn/images/article/project/lottery/introduce/introduce-220101-02.png)
+![](res\lottery.md\dcbe787f-5f39-41a3-a4c3-b53b15e00db2.jpg)
 
 整体系统架构设计包含了6个工程：
 
@@ -95,7 +95,7 @@ So！基于DDD领域驱动设计的四层架构**抽奖系统**，开始啦！�
 
 ### 4. 凝练流程领域
 
-![](https://bugstack.cn/images/article/project/lottery/introduce/introduce-220101-03.png)
+![](res\lottery.md\9c8de3d1-d241-4fe9-90c5-81bffc609dce.jpg)
 
 - 拆解功能流程，提炼领域服务，一步步教会你把一个业务功能流程如何拆解为各个职责边界下的领域模块，在通过把开发好的领域服务在应用层进行串联，提供整个服务链路。
 - 通过这样的设计和落地思想，以及在把流程化的功能按照面向对象的思路使用设计模式进行设计，让每一步代码都变得清晰易懂，这样实现出来的代码也就更加易于维护和扩展了。
@@ -116,7 +116,7 @@ So！基于DDD领域驱动设计的四层架构**抽奖系统**，开始啦！�
 
 课程包括：`小册`、`视频`、`代码`、`作业`，四方面结合的方式进行学习，所以也能让即使缺少编码经验的在校学生、应届生或者是CRUD熟练工，都能快速加入项目进行学习。
 
-![](https://bugstack.cn/images/article/project/lottery/introduce/introduce-220101-04.png)
+![](res\lottery.md\9cfc6fd4-0b1c-4f6b-ac32-59fbf24ab0ab.jpg)
 
 - 课程分为：`大厂规范`、`领域开发`、`运营后台`、`应用场景`、`系统运维`，共5章34节来讲解DDD分布式系统的架构设计和实践落地。
 - 只要你能认真跟着敲下来，22年的 Offer 不会便宜！*真的是研发能力有差异吗，其实不是，你差的只是一个有人带着你肝的大型系统而已！*
@@ -189,7 +189,7 @@ chore:    不修改src或者test的其余修改，例如构建过程或辅助工
 
 在星球实战项目学习中，有一个女课代表，每一次交作业提交都可以用精致来形容，她的学习速度超级快，也可以非常清晰的分析出每一块的流程并配上流程图，如下：
 
-![](https://bugstack.cn/images/article/project/lottery/introduce/introduce-220101-05.png)
+![](res\lottery.md\370648ed-3dc4-45ec-b9a8-21892b24523d.jpg)
 
 - 我也希望有更多的优秀的你，与我一起学习、成长、赚钱，22年，我们加油！
 

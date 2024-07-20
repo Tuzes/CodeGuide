@@ -49,7 +49,7 @@ public void test_proxy_class() {
 
 在把 AOP 整个切面设计融合到 Spring 前，我们需要解决两个问题，包括：`如何给符合规则的方法做代理`，`以及做完代理方法的案例后，把类的职责拆分出来`。而这两个功能点的实现，都是以切面的思想进行设计和开发。如果不是很清楚 AOP 是啥，你可以把切面理解为用刀切韭菜，一根一根切总是有点慢，那么用手(`代理`)把韭菜捏成一把，用菜刀或者斧头这样不同的拦截操作来处理。而程序中其实也是一样，只不过韭菜变成了方法，菜刀变成了拦截方法。整体设计结构如下图：
 
-![](https://bugstack.cn/assets/images/spring/spring-12-01.png)
+![](res\2021-07-13-第12章：炉火纯青，基于JDK和Cglib动态代理，实现AOP核心功能.md\75b33811-ee11-4b5e-8c51-82bb534985ff.jpg)
 
 - 就像你在使用 Spring 的 AOP 一样，只处理一些需要被拦截的方法。在拦截方法后，执行你对方法的扩展操作。
 - 那么我们就需要先来实现一个可以代理方法的 Proxy，其实代理方法主要是使用到方法拦截器类处理方法的调用 `MethodInterceptor#invoke`，而不是直接使用 invoke 方法中的入参 Method method 进行 `method.invoke(targetObj, args)` 这块是整个使用时的差异。
@@ -160,7 +160,7 @@ small-spring-step-11
 
 AOP 切点表达式和使用以及基于 JDK 和 CGLIB 的动态代理类关系，如图 12-2
 
-![图 12-2](https://bugstack.cn/assets/images/spring/spring-12-02.png)
+![图 12-2](res\2021-07-13-第12章：炉火纯青，基于JDK和Cglib动态代理，实现AOP核心功能.md\2ff8f8e0-c864-48d7-88a7-aa10f6f02a3e.jpg)
 
 - 整个类关系图就是 AOP 实现核心逻辑的地方，上面部分是关于方法的匹配实现，下面从 AopProxy 开始是关于方法的代理操作。
 - AspectJExpressionPointcut 的核心功能主要依赖于 aspectj 组件并处理 Pointcut、ClassFilter,、MethodMatcher 接口实现，专门用于处理类和方法的匹配过滤操作。
@@ -227,7 +227,7 @@ Process finished with exit code 0
 
 **拆解案例**
 
-![图 12-3](https://bugstack.cn/assets/images/spring/spring-12-03.png)
+![图 12-3](res\2021-07-13-第12章：炉火纯青，基于JDK和Cglib动态代理，实现AOP核心功能.md\a498f7af-ef32-42d9-8776-171ad1972e06.jpg)
 
 - 拆解过程可以参考截图 12-3，我们需要把代理对象拆解出来，因为它可以是 JDK 的实现也可以是 Cglib 的处理。
 - 方法匹配器操作其实已经是一个单独的实现类了，不过我们还需要把传入的目标对象、方法匹配、拦截方法，都进行统一的包装，方便外部调用时进行一个入参透传。

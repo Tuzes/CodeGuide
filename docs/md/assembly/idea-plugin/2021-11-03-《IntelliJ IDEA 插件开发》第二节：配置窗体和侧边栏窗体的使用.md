@@ -64,7 +64,7 @@ guide-idea-plugin-tool-window
 
 **New -> Swing UI Designer -> GUI Form**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211103-01.png)
+![](res\2021-11-03-《IntelliJ IDEA 插件开发》第二节：配置窗体和侧边栏窗体的使用.md\280cf00f-1d4e-497f-8b18-5ba59a54ab95.jpg)
 
 - 在 Java 中创建窗体的方式主要有 AWT、Swing、JavaFx，由于 IDEA 使用 Swing 开发，所以这里创建 Swing 窗体的兼容性会更好。
 - 那么这里 Swing 窗体的创建可以是自己手写窗体结构，也可以使用可视化拖拽的 GUI Form 如果你的窗体不复杂，其实拖拽的方式就可以满足使用。
@@ -101,7 +101,7 @@ public class SettingUI {
 }
 ```
 
-![](https://bugstack.cn/images/article/assembly/assembly-211103-02.png)
+![](res\2021-11-03-《IntelliJ IDEA 插件开发》第二节：配置窗体和侧边栏窗体的使用.md\5817ebbb-756a-4548-932d-a699803d9162.jpg)
 
 - 配置页窗体主要提供文章路径的选择，这里需要用到的标签包括：JLabel、JTextField、JButton
 - 在使用  GUI Form 创建完窗体后，就会出现这样一个可视化的页面，右侧可以把各类标签拖到中间的面板中，左侧进行设置展示名称和属性名称。
@@ -127,7 +127,7 @@ public class ReadUI {
 }
 ```
 
-![](https://bugstack.cn/images/article/assembly/assembly-211103-03.png)
+![](res\2021-11-03-《IntelliJ IDEA 插件开发》第二节：配置窗体和侧边栏窗体的使用.md\37d9e24c-9d08-4b9c-84a6-e05d0449898b.jpg)
 
 - 在窗体创建和配置页窗体是一样的，也是通过拖拽到面板中，用于展示路径文件内容。
 - 你可以适当的添加一些其他按钮进去，比如翻页阅读、滚动条、字数展示等。
@@ -241,13 +241,13 @@ public class SettingFactory implements SearchableConfigurable {
 
 **配置文件路径**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211103-04.png)
+![](res\2021-11-03-《IntelliJ IDEA 插件开发》第二节：配置窗体和侧边栏窗体的使用.md\391c1ec1-9018-408e-b003-69a9cd4ac4e0.jpg)
 
 - 点击选择按钮，选择你的文件位置，选择后点击 OK 
 
 **查看展示文件**
 
-![](https://bugstack.cn/images/article/assembly/assembly-211103-05.png)
+![](res\2021-11-03-《IntelliJ IDEA 插件开发》第二节：配置窗体和侧边栏窗体的使用.md\84b61519-25b7-4c73-b09f-7cf6f26aeab9.jpg)
 
 - 确认好文件路径后，就可以再右侧栏看到自己的文件展示内容了。*是不是在扩展些，就适合你摸鱼了！？*
 

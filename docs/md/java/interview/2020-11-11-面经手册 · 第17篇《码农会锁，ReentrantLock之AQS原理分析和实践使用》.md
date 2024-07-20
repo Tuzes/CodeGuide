@@ -47,7 +47,7 @@ ReentrantLock 可重入独占锁涉及的知识点较多，为了更好的学习
 
 接下来沿着 ReentrantLock 的知识链，继续分析 AQS 独占锁的相关知识点，如图 17-1
 
-![图 17-1 ReentrantLock 的知识链](https://bugstack.cn/assets/images/2020/interview/interview-17-1.png)
+![图 17-1 ReentrantLock 的知识链](res\2020-11-11-面经手册 · 第17篇《码农会锁，ReentrantLock之AQS原理分析和实践使用》.md\25ccb784-c3dd-4a47-8840-933050578cc5.jpg)
 
 在这部分知识学习中，会主要围绕 ReentrantLock 中关于 AQS 的使用进行展开，逐步分析源码了解原理。
 
@@ -176,13 +176,13 @@ CAS 是一种无锁算法，这种操作是 CPU 指令集操作，只有一步�
 
 #### 4.1 获取锁流程图
 
-![图 17-2 获取锁流程图](https://bugstack.cn/assets/images/2020/interview/interview-17-2.png)
+![图 17-2 获取锁流程图](res\2020-11-11-面经手册 · 第17篇《码农会锁，ReentrantLock之AQS原理分析和实践使用》.md\f6280d15-714a-4470-944d-cddd07a5e59b.jpg)
 
 图 17-2 就是整个 ReentrantLock 中获取锁的核心流程，包括非公平锁和公平锁的一些交叉流程。接下来我们就以此按照此流程来讲解相应的源码部分。
 
 #### 4.2 lock
 
-![图 17-3 lock -> CAS](https://bugstack.cn/assets/images/2020/interview/interview-17-3.png)
+![图 17-3 lock -> CAS](res\2020-11-11-面经手册 · 第17篇《码农会锁，ReentrantLock之AQS原理分析和实践使用》.md\3f8b6dc6-5145-4516-b567-7e720b67fef6.jpg)
 
 ReentrantLock 实现了非公平锁和公平锁，所以在调用 `lock.lock();` 时，会有不同的实现类：
 

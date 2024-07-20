@@ -41,7 +41,7 @@ title: 编码指南
 
 我给自己在技术职业成长上，定位成一个能抗住`农夫三拳`的架构师，所以我在编写和输出的技术内容上，也是以数据结构、算法逻辑、设计模式、核心技术、系统架构、服务运维等方面的知识扩展技术广度和深度，并以实践验证的学习方式进行汇总内容编写文章。也希望这些成体系的技术系列内容能帮助你慢慢且踏实的成长起来。
 
-![](https://bugstack.cn/images/system/overview.png)
+![](res\guide-to-reading.md\804bb2e0-2540-4e0c-8530-b399157f9bbb.jpg)
 
 而这几大块内容也是每一个较贵的 Java 程序员应该掌握的内容，可以包括：
 
@@ -59,7 +59,7 @@ title: 编码指南
 
 可能有很大一部分处于开始成长阶段的码农伙伴，不太清楚自己要从哪里开始学习，哪怕手里有几个T的资料，也没有办法把这些内容吸收到大脑中。因此我把一些非常有必要学习的知识串连出一条学习路径，帮助处于不同阶段的伙伴找到学习方向，也可以把自己的技术水平和工资代码，都拉起来。🌶
 
-![](https://bugstack.cn/assets/images/LearningPath.png)
+![](res\guide-to-reading.md\7a9c3a13-67c6-4d6e-98ff-ca7dc046b89e.jpg)
 
 - Java 面经手册：[https://download.csdn.net/download/Yao__Shun__Yu/14932325](https://download.csdn.net/download/Yao__Shun__Yu/14932325)
 - 重学Java设计模式：[https://download.csdn.net/download/Yao__Shun__Yu/19265731](https://download.csdn.net/download/Yao__Shun__Yu/19265731)
@@ -79,7 +79,7 @@ title: 编码指南
 - 地址：[Java 面经手册](https://bugstack.cn/md/java/interview/2020-07-28-%E9%9D%A2%E7%BB%8F%E6%89%8B%E5%86%8C%20%C2%B7%20%E5%BC%80%E7%AF%87%E3%80%8A%E9%9D%A2%E8%AF%95%E5%AE%98%E9%83%BD%E9%97%AE%E6%88%91%E5%95%A5%E3%80%8B.html)
 - 介绍：全书共计5章29节，417页11.5万字，耗时4个月完成。涵盖数据结构、算法逻辑、并发编程、JVM以及简历和互联网大厂面试等内容。
 
-![](https://bugstack.cn/assets/images/2020/interview/interview-pdf-2.png)
+![](res\guide-to-reading.md\1f122922-3ab5-42f8-9b5e-a0952324fa3c.jpg)
 
 [《Java 面经手册》](https://bugstack.cn/md/project/pdf/2021-01-26-Java%E9%9D%A2%E7%BB%8F%E6%89%8B%E5%86%8CPDF%E4%B8%8B%E8%BD%BD.html) 是一本以面试题为入口讲解 Java 核心技术的 PDF 书籍，书中内容也极力的向你证实`代码是对数学逻辑的具体实现`。*为什么这么说？* 当你仔细阅读书籍时，会发现这里有很多数学知识，包括：扰动函数、负载因子、拉链寻址、开放寻址、斐波那契（Fibonacci）散列法还有黄金分割点的使用等等。
 
@@ -102,7 +102,7 @@ title: 编码指南
 - 地址：[Spring 手撸专栏](https://bugstack.cn/md/spring/develop-spring/2021-05-16-%E7%AC%AC1%E7%AB%A0%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%EF%BC%8C%E6%89%8B%E5%86%99Spring%E8%83%BD%E7%BB%99%E4%BD%A0%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%EF%BC%9F.html)
 - 介绍：在写了部分关于 `Spring核心源码` 的面经内容后，我决定要去手撸一个Spring了。为啥这么干呢？因为所有我想写的内容，都希望它是以理科思维理解为目的方式学会，而不是靠着硬背记住。而编写面经的过程中涉及到的每一篇Spring源码内容分析，在即使去掉部分非主流逻辑后，依然会显得非常庞大。
 
-![](https://bugstack.cn/assets/images/spring/spring-0-03.png)
+![](res\guide-to-reading.md\3a04e6c3-59c2-48d5-a53a-7e471477bcef.jpg)
 
 - 此专栏是一本以开发简化版Spring学习其原理和内核的知识内容，不仅是代码编写实现也更注重内容上的需求分析和方案设计，所以在学习的过程要结合这些内容一起来实践，并调试对应的代码。粉丝伙伴在阅读的过程中，**千万不要害怕在学习的过程中遇到问题，这些都是正常的！** 希望你可以一直坚持把这些内容事必躬亲、亲历亲为的学完，加油！
 
@@ -111,7 +111,7 @@ title: 编码指南
 - 地址：[Mybatis 手撸专栏](https://bugstack.cn/md/spring/develop-mybatis/2022-03-20-%E7%AC%AC1%E7%AB%A0%EF%BC%9A%E5%BC%80%E7%AF%87%E4%BB%8B%E7%BB%8D%EF%BC%8C%E6%89%8B%E5%86%99Mybatis%E8%83%BD%E7%BB%99%E4%BD%A0%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%EF%BC%9F.html)
 - 介绍：像我们之前完成[手写 Spring](https://mp.weixin.qq.com/s/g7YdIe_FSrk-WE8nQRO3TA)一样，拆解功能、简化流程、渐进实现，让读者能够更容易的学习到最有价值的知识。
 
-![](https://bugstack.cn/images/article/spring/mybatis-220320-02.png)
+![](res\guide-to-reading.md\93d4a39c-e072-45e0-af50-e4ea7ea5e420.jpg)
 
 在手写的过程中学习 Mybatis 从解析、绑定、反射、缓存，到会话和事务操作，以及如何与 Spring 进行关联注册 Bean 对象，完成整合部分功能逻辑。通过这些内容的拆解实现，读者伙伴就可以非常清楚的知道这些核心功能都是如何实现的了，以后再阅读 Mybatis 源码也就知道从哪开始到哪结束了。
 
@@ -135,11 +135,11 @@ title: 编码指南
 
 | 序号 | 类型         | 图稿                                                         | 业务场景                                             | 实现要点                                                     |
 | ---- | ------------ | ------------------------------------------------------------ | ---------------------------------------------------- | ------------------------------------------------------------ |
-| 1    | **工厂方法** | ![img](https://bugstack.cn/assets/images/2020/design/11.png) | 多种类型商品不同接口，统一发奖服务搭建场景           | 定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。 |
-| 2    | **抽象工厂** | ![img](https://bugstack.cn/assets/images/2020/design/12.png) | 替换Redis双集群升级，代理类抽象场景                  | 提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。 |
-| 3    | **生成器**   | ![img](https://bugstack.cn/assets/images/2020/design/13.png) | 各项装修物料组合套餐选配场景                         | 将一个复杂的构建与其表示相分离，使得同样的构建过程可以创建不同的表示。 |
-| 4    | **原型**     | ![img](https://bugstack.cn/assets/images/2020/design/14.png) | 上机考试多套试，每人题目和答案乱序排列场景           | 用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。 |
-| 5    | **单例**     | ![img](https://bugstack.cn/assets/images/2020/design/15.png) | 7种单例模式案例，Effective Java 作者推荐枚举单例模式 | 保证一个类仅有一个实例，并提供一个访问它的全局访问点。       |
+| 1    | **工厂方法** | ![img](res\guide-to-reading.md\f776fe00-3eff-4aca-a5f4-3ab178438ba8.jpg) | 多种类型商品不同接口，统一发奖服务搭建场景           | 定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。 |
+| 2    | **抽象工厂** | ![img](res\guide-to-reading.md\c3f3ed9b-2648-430a-86e1-9346d21b2322.jpg) | 替换Redis双集群升级，代理类抽象场景                  | 提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。 |
+| 3    | **生成器**   | ![img](res\guide-to-reading.md\5f84e281-ab5b-45dc-8bfd-e05b617d7fba.jpg) | 各项装修物料组合套餐选配场景                         | 将一个复杂的构建与其表示相分离，使得同样的构建过程可以创建不同的表示。 |
+| 4    | **原型**     | ![img](res\guide-to-reading.md\d27e040b-bf06-43e5-8a1a-8120b5096d3f.jpg) | 上机考试多套试，每人题目和答案乱序排列场景           | 用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。 |
+| 5    | **单例**     | ![img](res\guide-to-reading.md\50fb51cc-70ee-4624-8c75-6b1e36f3b6cf.jpg) | 7种单例模式案例，Effective Java 作者推荐枚举单例模式 | 保证一个类仅有一个实例，并提供一个访问它的全局访问点。       |
 
 - 图片引用：[https://refactoringguru.cn](https://refactoringguru.cn)
 - 出版图书：[https://mp.weixin.qq.com/s/g9LYQEqzOeiYOpfG_5XFYg](https://mp.weixin.qq.com/s/g9LYQEqzOeiYOpfG_5XFYg)
@@ -171,7 +171,7 @@ title: 编码指南
 - 地址：[IDEA Plugin 开发](https://bugstack.cn/md/assembly/idea-plugin/2021-08-27-%E6%8A%80%E6%9C%AF%E8%B0%83%E7%A0%94%EF%BC%8CIDEA%20%E6%8F%92%E4%BB%B6%E6%80%8E%E4%B9%88%E5%BC%80%E5%8F%91%EF%BC%9F.html)
 - 介绍：IDEA 插件开发可以帮助研发人员提升能效，解决一些实际场景中的共性问题。但最近在折腾IDEA插件开发的时候，市面的资料确实不多，也没有成体系完整的开发指导手册，所以就遇到了很多不知道就不会的事情，需要一点点查询搜索源码、验证API接口，最终把各项功能实现，当然在这个过程中也确实踩了不少坑！接下来在这个专栏会把一些关于 IDEA 插件开发用到的各项知识做成案例输出出来，帮助有需要的研发伙伴，一起建设 IDEA Plugin
 
-![](https://bugstack.cn/assets/images/middleware/middleware-5-2.png)
+![](res\guide-to-reading.md\02abfbf0-de6d-4878-bce1-8e6ef3970461.jpg)
 
 - **开发方式**：在官网的描述中，创建IDEA插件工程的方式有两种分别是，IntelliJ Platform Plugin 模版创建和 Gradle 构建方式。
 - **框架入口**：一个 IDEA 插件开发完，要考虑把它嵌入到哪，比如是从 IDEA 窗体的 Edit、Tools 等进入配置还是把窗体嵌入到左、右工具条还是IDEA窗体下的对话框。
@@ -204,7 +204,7 @@ title: 编码指南
 
 这个新项目，结合小傅哥已经带着大家完成的 OpenAi 大模型应用业务场景，做上层的营销活动。这就像互联网公司中有了电商、外卖、出行等场景一样，在场景之上做营销活动。所以我们的新项目是 **《大营销平台系统》**！因为小傅哥的星球之前做过了一个抽奖，那么这个项目会用新的DDD架构，对抽奖系统进行重构，并扩展出`营销账户`、`用户返利`、`积分兑换`等服务，完成一整套的营销平台功能。💥
 
-![](https://bugstack.cn/images/article/project/big-market/roadmap-ddd-stc-05.png)
+![](res\guide-to-reading.md\94c4276d-0e66-4321-92cd-8c1026a7cb41.jpg)
 
 #### 1.2 OpenAi 大模型应用服务体系构建 - API-SDK、鉴权、公众号、企业微信、支付服务
 
@@ -212,14 +212,14 @@ title: 编码指南
 
 此项目以围绕类似 ChatGPT 生成式服务，构建微服务应用架构体系组件。包括；用户鉴权、公众号、多方支付、企业微信等对接方式，满足不同诉求的使用。并以模块化设计，积木式构建应用，让不同的场景诉求都可以配置化对接。
 
-![](https://bugstack.cn/images/article/project/chatgpt/chatgpt-230422-01.png?raw=true)
+![](res\guide-to-reading.md\65ac8d3e-649b-41cf-9edb-d2c86bd22204.jpg)
 
 #### 1.3 Lottery 抽奖系统 - 基于领域驱动设计的四层架构实践
 
 - 地址：[Lottery 抽奖系统 - 基于领域驱动设计的四层架构实践](https://bugstack.cn/md/project/lottery/introduce/Lottery%E6%8A%BD%E5%A5%96%E7%B3%BB%E7%BB%9F.html)
 - 介绍：`Lottery 抽奖系统` 项目是一款互联网面向C端人群营销活动类的抽奖系统，可以提供抽奖活动玩法策略的创建、参与、记账、发奖等逻辑功能。在使用的过程中运营人员通过创建概率类奖品的抽奖玩法，对用户进行拉新、促活、留存，通常这样的系统会用在电商、外卖、出行、公众号运营等各类场景中。
 
-![](https://bugstack.cn/images/article/project/lottery/introduce/system-list.png)
+![](res\guide-to-reading.md\6622997e-f855-477e-a1bf-cd48a7e4fdc6.jpg)
 
 在此项目中你会学习到互联网公司关于C端项目开发时候用到的一些，技术、架构、规范等内容。由于项目为实战类编程项目，在学习的过程中需要上手操作，小傅哥会把系统的搭建拉不同的分支列为每一个章节进行设计和实现并记录到开发日记中，读者在学习的过程中可以结合这部分内容边看文章边写代码实践。
 
@@ -253,7 +253,7 @@ title: 编码指南
 
 这套`透视业务流程的监控系统`，与 `Prometheus + Grafana`、`Skywalking` 有较大的差异。这两款监控都是系统健康度监控，而小傅哥带着大家做的是业务流程监控。*很多中大厂，也都有同类的业务系统*
 
-![img](https://bugstack.cn/images/article/project/business-behavior-monitor/business-behavior-monitor-03.png)
+![img](res\guide-to-reading.md\ec412724-334d-4b59-b2c9-b31c083e4412.jpg)
 
 #### 2.2 动态线程池组件实现
 
@@ -263,7 +263,7 @@ title: 编码指南
 
 我们知道，线程池（Thread Pool），是一种基于池化思想管理线程的工具，用于降低资源消耗、提高响应速度、提高线程的管理性。池化技术的引入，可以有效的减少线程频繁申请/销毁和调度所带来的额外开销。对于池化思想，我们还能看到；内存池、连接池、化粪池。
 
-![](https://bugstack.cn/images/article/project/dynamic-thread-pool/dynamic-thread-pool-01.png)
+![](res\guide-to-reading.md\8f614d5e-8c07-48ff-925a-ca25483e6c77.jpg)
 
 #### 2.3 支付SDK设计和开发
 
@@ -273,14 +273,14 @@ title: 编码指南
 
 小傅哥在带着大家做的项目和小场景中，有做过微信支付，支付宝沙箱支付，但想做真实的支付一般是需要个体户或者公司主体的。不过好在市面还有一些专门提供给个人使用的支付，比如；蓝兔、虎皮椒、PayJS。这些支付中，小傅哥测试验证了蓝兔支付，为它提供了一款SDK，让大家像使用微信支付一样简单的使用蓝兔支付。
 
-![](https://bugstack.cn/images/article/project/ltzf-sdk-java/ltzf-sdk-java-04.png)
+![](res\guide-to-reading.md\7b1ad3b4-6e9e-47e9-919c-a902a757dbce.jpg)
 
 #### 2.4 《SpringBoot 中间件设计和开发》
 
 - 地址：[《SpringBoot 中间件设计和开发》](https://bugstack.cn/md/project/springboot-middleware/2021-03-31-%E3%80%8ASpringBoot%20%E4%B8%AD%E9%97%B4%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%BC%80%E5%8F%91%E3%80%8B%E4%B8%93%E6%A0%8F%E5%B0%8F%E5%86%8C%E4%B8%8A%E7%BA%BF%E5%95%A6%EF%BC%81.html)
 - 介绍：说到底，为什么要扒开CRUD的表面，深入到核心源码实践学一些中间件开发技能，还不是希望自己对技术栈学习有一定的深度，免得面试时被人忽悠压薪资。就像人家问你：类的代理、反射调用是在什么场景用到的？ 自定义注解是怎么和切面一起获取到信息使用的？你需要的yml配置信息是如何被SpringBoot加载并初始化的？Bean 是如何被注入到 Spring 容器，提供服务的？综上，等等这些技术点可能很多时候你所学到的只能称作为背答案、记结果，因为没有实操所以过后就忘而且也扛不住面试官的接连发问。
 
-![](https://bugstack.cn/assets/images/middleware/2-1.png)
+![](res\guide-to-reading.md\399d7270-16dc-46e2-a61b-5d36b942fb80.jpg)
 
 - **技术框架**：包括 Spring、SpringBoot 配置加载、自定义注解、扫描注册Bean等，以及 ORM 框架设计原理和实现。这部分技术主要是把开发的中间件与框架结合，开发相应的组件或者包装为各类 SpringBoot Starter 的能力学习。
 - **数据服务**：Mysql、Redis、Elasticsearch，都是数据服务，通常需要开发各类组件对数据服务的使用进行封装，Mysql 我们知道有 JDBC，Redis 我们知道有 Jedis，但 Elasticsearch 有 x-pack 你是否了解。
@@ -295,7 +295,7 @@ title: 编码指南
 
 API网关系统用于统一管理RPC（Dubbo）通信接口，通过协议解析和泛化调用统一对外提供HTTP服务的系统。这套系统是微服务架构设计，分为核心通信、启动引擎、注册中心、管理平台以及上报接口服务。这套API网关也是随着对公司传统庞大的单体应用（All in one）拆分为众多的微服务（Microservice）以后，所引入的统一通信管理系统。用于运行在外部HTTP请求与内部RPC服务之间的一个流量入口，实现对外部请求的协议转换、参数校验、鉴权、切量、熔断、限流、监控、风控等各类共性的通用服务。
 
-![img](https://bugstack.cn/images/article/assembly/api-gateway/api-gateway-0-04.png?raw=true)
+![img](res\guide-to-reading.md\633b39db-2629-4d60-bbe6-8a8c999878ee.jpg)
 
 这是一整套API网关的核心通信模型结构图，以API网关算力的多套服务注册到网关中心开始，拉取RPC应用接口并完成映射HTTP调用操作。最终允许用户通过 Nginx 访问和路径重写的负载均衡管理，调用到具体的网关算力中执行协议解析和RPC接口的泛化调用并最终返回结果数据。
 

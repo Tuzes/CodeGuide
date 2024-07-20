@@ -47,7 +47,7 @@ lock: need
 
 ## 三、 JDK1.6、JDK1.7、JDK1.8 内存模型演变
 
-![图 25-1  JDK1.6、JDK1.7、JDK1.8，内存模型演变](https://bugstack.cn/assets/images/2020/interview/interview-25-1.png)
+![图 25-1  JDK1.6、JDK1.7、JDK1.8，内存模型演变](res\2021-01-06-面经手册 · 第25篇《JVM内存模型总结，有各版本JDK对比、有元空间OOM监控案例、有Java版虚拟机，综合学习更容易！》.md\b9fc0ba0-5005-4cb8-b0d8-3db424e5cb47.jpg)
 
 如图 25-1 是 JDK 1.6、1.7、1.8 的内存模型演变过程，其实这个内存模型就是 JVM 运行时数据区依照JVM虚拟机规范的具体实现过程。
 
@@ -78,7 +78,7 @@ public static float circumference(float r){
 
 接下来，如图 25-2 是这段代码的在虚拟机中的执行过程，左侧是它的程序计数器对应的行号。
 
-![图 25-2 程序计数器](https://bugstack.cn/assets/images/2020/interview/interview-25-2.png)
+![图 25-2 程序计数器](res\2021-01-06-面经手册 · 第25篇《JVM内存模型总结，有各版本JDK对比、有元空间OOM监控案例、有Java版虚拟机，综合学习更容易！》.md\2a9e8247-358f-4c44-b76a-623f79a4b9a3.jpg)
 
 - 这些行号每一个都会对应一条需要执行的字节码指令，是压栈还是弹出或是执行计算。
 - 之所以说是线程私有的，因为如果不是私有的，那么整个计算过程最终的结果也将错误。
@@ -95,7 +95,7 @@ public static float circumference(float r){
 
 >斐波那契数列（Fibonacci sequence），又称黄金分割数列、因数学家列昂纳多·斐波那契（Leonardoda Fibonacci）以兔子繁殖为例子而引入，故又称为“兔子数列”，指的是这样一个数列：1、1、2、3、5、8、13、21、34、……在数学上，斐波纳契数列以如下被以递推的方法定义：F(1)=1，F(2)=1, F(n)=F(n-1)+F(n-2)（n>=3，n∈N*）在现代物理、准晶体结构、化学等领域，斐波纳契数列都有直接的应用，为此，美国数学会从1963年起出版了以《斐波纳契数列季刊》为名的一份数学杂志，用于专门刊载这方面的研究成果。
 
-![图 25-3 斐波那契数列在虚拟机栈中的执行过程](https://bugstack.cn/assets/images/2020/interview/interview-25-3.png)
+![图 25-3 斐波那契数列在虚拟机栈中的执行过程](res\2021-01-06-面经手册 · 第25篇《JVM内存模型总结，有各版本JDK对比、有元空间OOM监控案例、有Java版虚拟机，综合学习更容易！》.md\e99b3c82-160a-4015-a056-0ef1f60fba6e.jpg)
 
 - 整个这段流程，就是方法的调用和返回。在调用过程申请了操作数栈的深度和局部变量的大小。
 - 以及相应的信息从各个区域获取并操作，其实也就是入栈和出栈的过程。
@@ -110,7 +110,7 @@ public static float circumference(float r){
 
 ### 4. 堆和元空间
 
-![图 25-4 Java 堆区域划分](https://bugstack.cn/assets/images/2020/interview/interview-25-4.png)
+![图 25-4 Java 堆区域划分](res\2021-01-06-面经手册 · 第25篇《JVM内存模型总结，有各版本JDK对比、有元空间OOM监控案例、有Java版虚拟机，综合学习更容易！》.md\0baa972e-20b6-464d-87a7-0c17075ea538.jpg)
 
 - JDK 1.8 JVM 的内存结构主要由三大块组成：堆内存、元空间和栈，Java 堆是内存空间占据最大的一块区域。
 - Java 堆，由年轻代和年老代组成，分别占据1/3和2/3。
@@ -118,7 +118,7 @@ public static float circumference(float r){
 - 另外这里我们特意画出了元空间，也就是直接内存区域。在 JDK 1.8 之后就不在堆上分配方法区了。
 - **元空间**从虚拟机Java堆中转移到本地内存，默认情况下，元空间的大小仅受本地内存的限制，说白了也就是以后不会因为永久代空间不够而抛出OOM异常出现了。*jdk1.8以前版本的 class和JAR包数据存储在 PermGen下面 ，PermGen 大小是固定的，而且项目之间无法共用，公有的 class，所以比较容易出现OOM异常。*
 - 升级 JDK 1.8后，元空间配置参数，`-XX:MetaspaceSize=512M XX:MaxMetaspaceSize=1024M`。教你个小技巧通过jps、jinfo查看元空间，如下：
-  - ![通过命令查看元空间](https://bugstack.cn/assets/images/2020/interview/interview-25-4-1.png)
+  - ![通过命令查看元空间](res\2021-01-06-面经手册 · 第25篇《JVM内存模型总结，有各版本JDK对比、有元空间OOM监控案例、有Java版虚拟机，综合学习更容易！》.md\330959a7-a6ef-4f2d-be35-d00b9092304c.jpg)
   - 通过jinfo查看默认MetaspaceSize大小（约20M）,MaxMetaspaceSize比较大。
 	
 
@@ -297,7 +297,7 @@ public static void main(String[] args) throws InterruptedException {
 
 **以上的测试参数**，配置到IDEA中运行程序里就可以，如下：
 
-![图 25-5 设置程序运行参数，监控OOM](https://bugstack.cn/assets/images/2020/interview/interview-25-5.png)
+![图 25-5 设置程序运行参数，监控OOM](res\2021-01-06-面经手册 · 第25篇《JVM内存模型总结，有各版本JDK对比、有元空间OOM监控案例、有Java版虚拟机，综合学习更容易！》.md\571e69cb-f2fd-4e65-94c1-3ed70a329f6e.jpg)
 
 另外，jconsole 可以通过 IDEA 提供的 Terminal 启动，直接输入 `jconsole`，回车即可。
 
@@ -335,7 +335,7 @@ Caused by: java.lang.OutOfMemoryError: Metaspace
 
 #### 4.3 监控截图
 
-![图 25-6 jconsole监测元空间溢出](https://bugstack.cn/assets/images/2020/interview/interview-25-6.png)
+![图 25-6 jconsole监测元空间溢出](res\2021-01-06-面经手册 · 第25篇《JVM内存模型总结，有各版本JDK对比、有元空间OOM监控案例、有Java版虚拟机，综合学习更容易！》.md\61e1dab5-e0b8-4499-9519-4d2a6399d445.jpg)
 
 - 图 25-6，就是监测程序OOM时的元空间表现。这回对这个元空间就有感觉了吧！
 

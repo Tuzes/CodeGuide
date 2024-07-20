@@ -200,6 +200,6 @@ Process finished with exit code -1
 
 >Postman访问；http://localhost:7397 并设置参数
 
-![](https://bugstack.cn/assets/images/pic-content/2019/09/netty-1-12-1.png)
+![](res\2019-08-15-netty案例，netty4.1基础入门篇十二《简单实现一个基于Netty搭建的Http服务》.md\49227686-9c48-455e-9d9d-49fe73b5762f.jpg)
 
 微信搜索「**bugstack虫洞栈**」公众号，关注后回复「**Netty专题案例**」获取本文源码&更多原创专题案例！

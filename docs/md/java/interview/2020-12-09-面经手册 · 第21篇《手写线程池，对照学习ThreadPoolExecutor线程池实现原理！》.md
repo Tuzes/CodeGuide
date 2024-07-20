@@ -19,7 +19,7 @@ lock: need
 
 `人看手机，机器学习！`
 
-![](https://bugstack.cn/assets/images/2020/interview/interview-21-0.png)
+![](res\2020-12-09-面经手册 · 第21篇《手写线程池，对照学习ThreadPoolExecutor线程池实现原理！》.md\632dc4f2-1a31-47ef-b2d8-d90a6e7ad2ea.jpg)
 
 正好是2020年，看到这张图还是蛮有意思的。以前小时候总会看到一些科技电影，讲到机器人会怎样怎样，但没想到人似乎被娱乐化的东西，搞成了低头族、大肚子！
 
@@ -76,7 +76,7 @@ threadPoolExecutor.shutdown();
 
 *其实很多时候一段功能代码的核心主逻辑可能并没有多复杂，但为了让核心流程顺利运行，就需要额外添加很多分支的辅助流程。就像我常说的，为了保护手才把擦屁屁纸弄那么大！*
 
-![图 21-1 线程池简化流程](https://bugstack.cn/assets/images/2020/interview/interview-21-1.png)
+![图 21-1 线程池简化流程](res\2020-12-09-面经手册 · 第21篇《手写线程池，对照学习ThreadPoolExecutor线程池实现原理！》.md\aea8fc5b-7232-4060-acbf-7350cfce3a0d.jpg)
 
 关于图 21-1，这个手写线程池的实现也非常简单，只会体现出核心流程，包括：
 1. 有n个一直在运行的线程，相当于我们创建线程池时允许的线程池大小。
@@ -227,7 +227,7 @@ workQueue.size：0
 
 #### 3.1 线程池类关系图
 
-![图 21-2 线程池类关系图](https://bugstack.cn/assets/images/2020/interview/interview-21-2.png)
+![图 21-2 线程池类关系图](res\2020-12-09-面经手册 · 第21篇《手写线程池，对照学习ThreadPoolExecutor线程池实现原理！》.md\46f34cb3-7cb4-4164-8923-2bb1321285b2.jpg)
 
 以围绕核心类 `ThreadPoolExecutor` 的实现展开的类之间实现和继承关系，如图 21-2 线程池类关系图。
 - 接口 `Executor`、`ExecutorService`，定义线程池的基本方法。尤其是 ` execute(Runnable command)` 提交线程池方法。
@@ -239,7 +239,7 @@ workQueue.size：0
 
 #### 3.2 高3位与低29位
 
-![图 22-3 线程状态，高3位与低29位](https://bugstack.cn/assets/images/2020/interview/interview-21-3.png)
+![图 22-3 线程状态，高3位与低29位](res\2020-12-09-面经手册 · 第21篇《手写线程池，对照学习ThreadPoolExecutor线程池实现原理！》.md\f5839730-525f-429a-82ab-1dae97ba6f22.jpg)
 
 ```java
 private final AtomicInteger ctl = new AtomicInteger(ctlOf(RUNNING, 0));
@@ -257,7 +257,7 @@ private static final int TERMINATED =  3 << COUNT_BITS;
 
 #### 3.2 线程池状态
 
-![图 22-4 线程池状态流转](https://bugstack.cn/assets/images/2020/interview/interview-21-4.png)
+![图 22-4 线程池状态流转](res\2020-12-09-面经手册 · 第21篇《手写线程池，对照学习ThreadPoolExecutor线程池实现原理！》.md\4c8b785b-6649-479b-be18-9da691317dcf.jpg)
 
 图 22-4 是线程池中的状态流转关系，包括如下状态：
 - `RUNNING`：运行状态，接受新的任务并且处理队列中的任务。
@@ -268,7 +268,7 @@ private static final int TERMINATED =  3 << COUNT_BITS;
 
 #### 3.3 提交线程(execute)
 
-![图 22-5 提交线程流程图](https://bugstack.cn/assets/images/2020/interview/interview-21-5.png)
+![图 22-5 提交线程流程图](res\2020-12-09-面经手册 · 第21篇《手写线程池，对照学习ThreadPoolExecutor线程池实现原理！》.md\26eaa266-3070-4be6-a8ae-35c260dacc95.jpg)
 
 1、图中的左侧的核心线程池是否已满？建议改成是否已达到核心线程数
 2、图中的有车的核心线程池是否已满？建议改成是否已达到最大线程数
@@ -305,7 +305,7 @@ public void execute(Runnable command) {
 
 #### 3.5 添加执行任务(addWorker)
 
-![图 22-6 添加执行任务逻辑流程](https://bugstack.cn/assets/images/2020/interview/interview-21-6.png)
+![图 22-6 添加执行任务逻辑流程](res\2020-12-09-面经手册 · 第21篇《手写线程池，对照学习ThreadPoolExecutor线程池实现原理！》.md\0c308bf7-2a7a-419d-8a86-a885c29375e8.jpg)
 
 **private boolean addWorker(Runnable firstTask, boolean core)**
 

@@ -442,15 +442,15 @@ public class NettyClientTest {
 
 >启动NettyServerTest *默认接收地址为E盘根目录
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-04-1.png)
+![](res\2019-08-19-netty案例，netty4.1中级拓展篇四《Netty传输文件、分片发送、断点续传》.md\167a9272-e37d-4b96-b5d2-a2a14783d96e.jpg)
 
 >启动NettyClientTest *设置传输文件
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-04-2.png)
+![](res\2019-08-19-netty案例，netty4.1中级拓展篇四《Netty传输文件、分片发送、断点续传》.md\d983524c-1b58-4f4b-9351-13cff53a1225.jpg)
 
 >文件传输结果
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-04-3.png)
+![](res\2019-08-19-netty案例，netty4.1中级拓展篇四《Netty传输文件、分片发送、断点续传》.md\fd85c618-675d-4110-abdb-3ec2e0b49187.jpg)
 
 >服务端执行结果
 

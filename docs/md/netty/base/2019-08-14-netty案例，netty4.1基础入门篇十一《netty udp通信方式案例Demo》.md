@@ -241,6 +241,6 @@ Process finished with exit code -1
 
 >在启动一个网络调试助手，NetAssist | 这样方便我们验证
 
-![](https://bugstack.cn/assets/images/pic-content/2019/09/netty-1-11-1.png)
+![](res\2019-08-14-netty案例，netty4.1基础入门篇十一《netty udp通信方式案例Demo》.md\0d8107d0-ee0b-4d1c-867e-0e00facf5be0.jpg)
 
 微信搜索「**bugstack虫洞栈**」公众号，关注后回复「**Netty专题案例**」获取本文源码&更多原创专题案例！

@@ -83,7 +83,7 @@ guide-idea-plugin-scaffolding
 
 ### 2. UI 工程配置窗体
 
-![](https://bugstack.cn/images/article/assembly/assembly-211123-4-01.png)
+![](res\2021-11-24-《IntelliJ IDEA 插件开发》第四节：扩展创建工程向导步骤，开发DDD脚手架.md\2c8614cb-1302-47a7-ba9e-552f9800d0d5.jpg)
 
 ```java
 public class ProjectConfigUI {
@@ -213,7 +213,7 @@ public class DDDModuleBuilder extends ModuleBuilder {
 
 **cn.bugstack.guide.idea.plugin.domain.service.AbstractProjectGenerator**
 
-![](https://bugstack.cn/assets/images/2020/all-28-5.png)
+![](res\2021-11-24-《IntelliJ IDEA 插件开发》第四节：扩展创建工程向导步骤，开发DDD脚手架.md\45d666e4-f973-4119-a097-add75937bf56.jpg)
 
 ```java
 public abstract class AbstractProjectGenerator extends FreemarkerConfiguration implements IProjectGenerator {
@@ -350,7 +350,7 @@ public class TemplateFactory extends ProjectTemplatesFactory {
 
 - 点击 `Plugin` 启动 IDEA 插件，之后创建工程如下：
 
-![](https://bugstack.cn/images/article/assembly/assembly-211123-4-02.png)
+![](res\2021-11-24-《IntelliJ IDEA 插件开发》第四节：扩展创建工程向导步骤，开发DDD脚手架.md\21ea6650-aa94-4913-b4c9-ce0324c26bf5.jpg)
 
 - 快拿去试试吧，启动插件，点击创建工程，傻瓜式点击，就可以创建出一个 DDD 工程结构了。
 

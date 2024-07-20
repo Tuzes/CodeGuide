@@ -155,11 +155,11 @@ public class NettyServer {
 ## 测试结果
 >启动服务端NettyServer
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty04-1.png)
+![](res\2019-08-08-netty案例，netty4.1基础入门篇五《NettyServer字符串编码器》.md\73576437-f556-45ae-9e42-322fcfe3e8bc.jpg)
 
 >启动模拟器NetAssist 发送数据测试
 
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty04-2.png)
+![](res\2019-08-08-netty案例，netty4.1基础入门篇五《NettyServer字符串编码器》.md\9f1b2de1-4c46-4b22-a1da-52de2d5ecea4.jpg)
 
 >执行结果
 

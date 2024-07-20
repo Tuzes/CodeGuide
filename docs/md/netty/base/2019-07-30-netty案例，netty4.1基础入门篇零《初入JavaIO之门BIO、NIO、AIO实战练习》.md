@@ -16,7 +16,7 @@ lock: need
 
 ## 前言介绍
 在Java中，提供了一些关于使用IO的API，可以供开发者来读写外部数据和文件，我们称这些API为Java IO。IO是Java中比较重要知识点，且比较难学习的知识点。并且随着Java的发展为提供更好的数据传输性能，目前有三种IO共存；分别是BIO、NIO和AIO。
-![微信公众号：bugstack虫洞栈 & bio、nio、aio](https://bugstack.cn/assets/images/pic-content/2019/10/netty-1-01-1-ios.png)
+![微信公众号：bugstack虫洞栈 & bio、nio、aio](res\2019-07-30-netty案例，netty4.1基础入门篇零《初入JavaIO之门BIO、NIO、AIO实战练习》.md\79717606-5ba9-4b35-9320-5dda5c952fe5.jpg)
 
 >Java BIO[Blocking I/O] | 同步阻塞I/O模式
 
@@ -328,7 +328,7 @@ itstack-demo-netty aio server start done. {关注公众号：bugstack虫洞栈 |
 Process finished with exit code -1
 ```
 
-![微信公众号：bugstack虫洞栈 & AIO案例测试](https://bugstack.cn/assets/images/pic-content/2019/10/netty-1-00-2.png)
+![微信公众号：bugstack虫洞栈 & AIO案例测试](res\2019-07-30-netty案例，netty4.1基础入门篇零《初入JavaIO之门BIO、NIO、AIO实战练习》.md\1c314323-6af5-47e5-bf16-eabcdad17835.jpg)
 
 ---------
 
@@ -514,7 +514,7 @@ itstack-demo-netty bio server start done. {关注公众号：bugstack虫洞栈 |
 Process finished with exit code -1
 ```
 
-![微信公众号：bugstack虫洞栈 & BIO案例测试](https://bugstack.cn/assets/images/pic-content/2019/10/netty-1-00-3.png)
+![微信公众号：bugstack虫洞栈 & BIO案例测试](res\2019-07-30-netty案例，netty4.1基础入门篇零《初入JavaIO之门BIO、NIO、AIO实战练习》.md\a115e728-4e7c-4408-8a41-ecb29d60f101.jpg)
 
 
 ### NIO案例代码
@@ -757,7 +757,7 @@ itstack-demo-netty nio server start done. {关注公众号：bugstack虫洞栈 |
 Process finished with exit code -1
 ```
 
-![微信公众号：bugstack虫洞栈 & NIO案例测试](https://bugstack.cn/assets/images/pic-content/2019/10/netty-1-00-4.png)
+![微信公众号：bugstack虫洞栈 & NIO案例测试](res\2019-07-30-netty案例，netty4.1基础入门篇零《初入JavaIO之门BIO、NIO、AIO实战练习》.md\e1f0570c-c099-45fa-bc89-4945d22990a2.jpg)
 
 微信搜索「**bugstack虫洞栈**」公众号，关注后回复「**Netty专题案例**」获取本文源码&更多原创专题案例！
 

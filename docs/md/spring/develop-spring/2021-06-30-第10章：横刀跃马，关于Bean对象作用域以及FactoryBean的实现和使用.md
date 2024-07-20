@@ -40,7 +40,7 @@ lock: need
 
 但这样的功能逻辑设计上并不复杂，因为整个 Spring 框架在开发的过程中就已经提供了各项扩展能力的`接茬`，你只需要在合适的位置提供一个接茬的处理接口调用和相应的功能逻辑实现即可，像这里的目标实现就是对外提供一个可以二次从 FactoryBean 的 getObject 方法中获取对象的功能即可，这样所有实现此接口的对象类，就可以扩充自己的对象功能了。*MyBatis 就是实现了一个 MapperFactoryBean 类，在 getObject 方法中提供 SqlSession 对执行 CRUD 方法的操作* 整体设计结构如下图：
 
-![](https://bugstack.cn/assets/images/spring/spring-10-01.png)
+![](res\2021-06-30-第10章：横刀跃马，关于Bean对象作用域以及FactoryBean的实现和使用.md\19be4b69-98cd-4ef3-beee-8807e9e4fd5e.jpg)
 
 - 整个的实现过程包括了两部分，一个解决单例还是原型对象，另外一个处理 FactoryBean 类型对象创建过程中关于获取具体调用对象的 `getObject` 操作。
 - `SCOPE_SINGLETON`、`SCOPE_PROTOTYPE`，对象类型的创建获取方式，主要区分在于 `AbstractAutowireCapableBeanFactory#createBean` 创建完成对象后是否放入到内存中，如果不放入则每次获取都会重新创建。
@@ -127,7 +127,7 @@ small-spring-step-09
 
 Spring 单例、原型以及 `FactoryBean` 功能实现类关系，如图 10-2
 
-![图 10-2](https://bugstack.cn/assets/images/spring/spring-10-02.png)
+![图 10-2](res\2021-06-30-第10章：横刀跃马，关于Bean对象作用域以及FactoryBean的实现和使用.md\500eba01-592a-4b97-b837-f301205bcc63.jpg)
 
 - 以上整个类关系图展示的就是添加 Bean 的实例化是单例还是原型模式以及 FactoryBean 的实现。
 - 其实整个实现的过程并不复杂，只是在现有的 AbstractAutowireCapableBeanFactory 类以及继承的抽象类 AbstractBeanFactory 中进行扩展。
@@ -521,7 +521,7 @@ Space losses: 3 bytes internal + 4 bytes external = 7 bytes total
 Process finished with exit code 0
 ```
 
-![](https://bugstack.cn/assets/images/spring/spring-10-03.png)
+![](res\2021-06-30-第10章：横刀跃马，关于Bean对象作用域以及FactoryBean的实现和使用.md\3d1e9e08-4a31-4981-9d23-b3ff08bdf16e.jpg)
 
 - 对象后面的这一小段字符串就是16进制哈希值，在对象头哈希值存放的结果上看，也有对应的数值。只不过这个结果是倒过来的。
 - 另外可以看到 cabb984@1b0375b3、cabb984@2f7c7260，这两个对象的结尾16进制哈希值并不一样，所以我们的原型模式是生效的。

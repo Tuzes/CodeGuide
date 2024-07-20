@@ -281,6 +281,6 @@ itstack-demo-netty server start done. {关注公众号：bugstack虫洞栈，获
 Process finished with exit code -1
 
 ```
-![](https://bugstack.cn/assets/images/pic-content/2019/08/netty-2-07-1.png)
+![](res\2019-08-22-netty案例，netty4.1中级拓展篇七《Netty请求响应同步通信》.md\8b86c58c-aec1-45cb-8e27-5f37cd17408c.jpg)
 
 微信搜索「**bugstack虫洞栈**」公众号，关注后回复「**Netty专题案例**」获取本文源码&更多原创专题案例！
